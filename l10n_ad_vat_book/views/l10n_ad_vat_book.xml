@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="l10n_ad_vat_book_form_view">
+            <field name="name">vat_book.form</field>
+            <field name="model">l10n.ad.vat.book</field>
+            <field name="arch" type="xml">
+                <form string="Report form">
+
+                    <sheet>
+                        <group col="4">
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="invoice_type"/>
+
+                        </group>
+                        <footer>
+                            <button name="get_vat_book" string="Generar llibre" type="object" class="btn-primary"/>
+                        </footer>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="vat_book_action">
+            <field name="name">Llibre d'IGI</field>
+            <field name="res_model">l10n.ad.vat.book</field>
+            <field name="target">new</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <menuitem id="menu_remittance" name="Llibre d'IGI" parent="account.menu_finance_reports" action="vat_book_action"/>
+    </data>
+</odoo>

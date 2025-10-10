@@ -1,0 +1,14 @@
+from odoo import models
+from odoo.addons.account.models.chart_template import template
+
+
+class AccountChartTemplate(models.AbstractModel):
+    _inherit = 'account.chart.template'
+
+    @template('ad')
+    def _get_ad_template_data(self):
+        return {
+            'property_account_receivable_id': 'account_common_430',
+            'property_account_payable_id': 'account_common_400',
+            'code_digits': '6',
+        }
