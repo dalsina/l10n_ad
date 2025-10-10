@@ -1,16 +1,18 @@
-<record id="l10n_ad_chart_template" model="account.chart.template">
-    <field name="name">Andorra - Pla Comptable</field>
-    <field name="code_digits">8</field>
-    <field name="account_root_id" ref="l10n_ad.account_root"/>
-    <field name="currency_id" ref="base.EUR"/>
-    <field name="country_id" ref="base.ad"/>
+<odoo>
+    <record id="l10n_ad_chart_template" model="account.chart.template">
+        <field name="name">Andorra - Pla Comptable</field>
+        <field name="code_digits">8</field>
+        <field name="account_root_id" ref="l10n_ad.account_root"/>
+        <field name="currency_id" ref="base.EUR"/>
+        <field name="country_id" ref="base.ad"/>
 
-    <field name="bank_account_code_prefix">572</field>
-    <field name="cash_account_code_prefix">570</field>
-    <field name="transfer_account_code_prefix">555</field>
+        <field name="bank_account_code_prefix">572</field>
+        <field name="cash_account_code_prefix">570</field>
+        <field name="transfer_account_code_prefix">555</field>
 
-    <field name="property_account_receivable_id" ref="account_common_430"/>
-    <field name="property_account_payable_id" ref="account_common_400"/>
-    <field name="property_account_expense_id" ref="account_common_600"/>
-    <field name="property_account_income_id" ref="account_common_700"/>
-</record>
+        <field name="property_account_receivable_id" ref="account_common_430"/>
+        <field name="property_account_payable_id" ref="account_common_400"/>
+        <field name="property_account_expense_id" ref="account_common_600"/>
+        <field name="property_account_income_id" ref="account_common_700"/>
+    </record>
+</odoo>
