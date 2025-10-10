@@ -5,14 +5,15 @@
     "version": "19.0.1.0.0",
     'icon': '',
     'countries': ['ad'],
-    "depends": [
+    'depends': [
         "account",
         "base_vat",
         "base_iban",
     ],
     "data": [
-        'data/account.account.template.csv',
-        'data/account.chart.template.xml',
+        'data/account_chart_template.xml',
+        'data/account.account-full.csv',
+        'data/account.account-common.csv',
         'data/fiscal_positions-ad.xml',
         'data/account_tax_group-ad.xml',
         'data/account_tax-ad.xml',
