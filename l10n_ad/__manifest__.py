@@ -8,19 +8,18 @@
         "account",
         "base_vat",
         "base_iban",
-        # "l10n_ad_defaults",
     ],
     "data": [
-        "data/account_chart_template.xml",
-        'data/account.account-full.csv',
-        'data/account.account-common.csv',
-        "data/fiscal_positions-ad.xml",
-        "data/account_tax_group-ad.xml",
-        "data/account_tax-ad.xml",
+        'data/account.chart.template.xml',
+        'data/account.account.template.csv',
+        'data/fiscal_positions-ad.xml',
+        'data/account_tax_group-ad.xml',
+        'data/account_tax-ad.xml',
     ],
     'installable': True,
     'images': [
         'images/config_chart_l10n_es.png',
         'images/l10n_es_chart.png'
     ],
+    'l10n': True,
 }
