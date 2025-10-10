@@ -1,9 +1,10 @@
 {
     "name": "Andorra - Comptabilitat",
-    "author": "Tècniques d'Avantguarda (TdA)",
-    "website": 'https://repo.tda.ad/odoo/l10n-andorra',
-    "category": "Localization/Account Charts",
+    "author": "IPGrup x IdeAnd",
+    "category": "Accounting/Localizations/Account Charts",
     "version": "19.0.1.0.0",
+    'icon': '',
+    'countries': ['ad'],
     "depends": [
         "account",
         "base_vat",
@@ -22,4 +23,5 @@
         'images/l10n_es_chart.png'
     ],
     'l10n': True,
+    'license': 'LGPL-3',
 }

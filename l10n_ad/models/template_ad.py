@@ -10,5 +10,5 @@ class AccountChartTemplate(models.AbstractModel):
         return {
             'property_account_receivable_id': 'account_common_430',
             'property_account_payable_id': 'account_common_400',
-            'code_digits': '6',
+            'code_digits': '8',
         }
