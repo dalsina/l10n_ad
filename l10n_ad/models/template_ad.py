@@ -7,7 +7,7 @@ class AccountChartTemplate(models.AbstractModel):
 
     @template('ad')
     def _get_ad_template_data(self):
-        raise Exception("¡La función se ejecuta 1!")
+        """ Hem posat un raise exception i aqui entra """
         return {
             'property_account_receivable_id': 'l10n_ad.account_common_430',
             'property_account_payable_id': 'l10n_ad.account_common_400',
