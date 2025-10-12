@@ -11,7 +11,7 @@ class AccountChartTemplate(models.AbstractModel):
             'name': _('Base'),
             'visible': False,
             'code_digits': '8',
-            'property_account_receivable_id': 'account_common_431',
+            'property_account_receivable_id': 'account_common_430',
             'property_account_payable_id': 'account_common_400',
             'downpayment_account_id': 'account_common_485',
         }

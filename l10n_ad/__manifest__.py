@@ -2,7 +2,7 @@
     "name": "Andorra - Comptabilitat",
     "author": "IPGrup x IdeAnd",
     "category": "Accounting/Localizations/Account Charts",
-    "version": "19.0.1.0.0",
+    "version": "19.0.0.0.0",
     'icon': '',
     'countries': ['ad'],
     'depends': [
@@ -13,7 +13,7 @@
     ],
     "data": [
         'data/account.account-full.csv',
-        'data/account.account-common.csv',
+        'data/account.account-ad.csv',
         'data/account_tax_group-ad.xml',
         'data/fiscal_positions-ad.xml',
         'data/account_tax-ad.xml',
