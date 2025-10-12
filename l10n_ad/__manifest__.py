@@ -14,9 +14,9 @@
         'data/account_chart_template.xml',
         'data/account.account-full.csv',
         'data/account.account-common.csv',
-        'data/fiscal_positions-ad.xml',
-        'data/account_tax_group-ad.xml',
         'data/account_tax-ad.xml',
+        'data/account_tax_group-ad.xml',
+        'data/fiscal_positions-ad.xml',
     ],
     'installable': True,
     'images': [
