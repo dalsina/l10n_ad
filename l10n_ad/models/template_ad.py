@@ -11,8 +11,21 @@ class AccountChartTemplate(models.AbstractModel):
             'template_data': {
                 'property_account_receivable_id': 'l10n_ad.account_common_430',
                 'property_account_payable_id': 'l10n_ad.account_common_400',
-                'code_digits': '8',
                 'currency_id': 'base.EUR',
                 'country_id': 'base.ad',
+                'code_digits': '8',
+            },
+        }
+
+    @template('ad', 'res.company')
+    def _get_ad_res_company_data(self):
+        return {
+            self.env.company.id: {
+                'account_sale_tax_id': 'l10n_ad.account_tax_template_s_igi45',
+                'account_purchase_tax_id': 'l10n_ad.account_tax_template_p_igi45',
+                'bank_account_code_prefix': '572',
+                'cash_account_code_prefix': '570',
+                'transfer_account_code_prefix': '57299',
+                'account_fiscal_country_id': 'base.ad',
             }
         }
