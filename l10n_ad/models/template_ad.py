@@ -24,7 +24,7 @@ class AccountChartTemplate(models.AbstractModel):
                 'bank_account_code_prefix': '572',
                 'cash_account_code_prefix': '570',
                 'transfer_account_code_prefix': '555',
-                'account_default_pos_receivable_account_id': 'account_common_430',
+                'account_default_pos_receivable_account_id': 'account_common_431',
                 'income_currency_exchange_account_id': 'account_common_768',
                 'expense_currency_exchange_account_id': 'account_common_668',
                 'account_journal_suspense_account_id': 'account_common_5729',
