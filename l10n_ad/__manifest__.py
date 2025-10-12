@@ -6,9 +6,8 @@
     'icon': '',
     'countries': ['ad'],
     'depends': [
-        "account",
-        "base_vat",
-        "base_iban",
+        'base',
+        'account',
     ],
     "data": [
         'data/account_chart_template.xml',
