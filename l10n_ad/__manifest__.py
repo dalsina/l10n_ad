@@ -8,6 +8,8 @@
     'depends': [
         'base',
         'account',
+        'base_iban',
+        'base_vat',
     ],
     "data": [
         'data/account.account-full.csv',
@@ -17,10 +19,6 @@
         'data/account_tax-ad.xml',
     ],
     'installable': True,
-    'images': [
-        'images/config_chart_l10n_es.png',
-        'images/l10n_es_chart.png'
-    ],
     'l10n': True,
     'license': 'LGPL-3',
 }
