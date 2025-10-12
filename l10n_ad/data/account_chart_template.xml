@@ -1,8 +1,8 @@
 <odoo>
-    <record id="l10n_ad_chart_template" model="account.chart.template">
+    <!-- <record id="l10n_ad_chart_template" model="account.chart.template">
         <field name="name">Andorra - Pla Comptable</field>
         <field name="code_digits">8</field>
-        <!-- <field name="account_root_id" ref="l10n_ad.account_root"/> -->
+        <field name="account_root_id" ref="l10n_ad.account_root"/>
         <field name="currency_id" ref="base.EUR"/>
         <field name="country_id" ref="base.ad"/>
 
@@ -14,5 +14,5 @@
         <field name="property_account_payable_id" ref="account_common_400"/>
         <field name="property_account_expense_id" ref="account_common_600"/>
         <field name="property_account_income_id" ref="account_common_700"/>
-    </record>
+    </record> -->
 </odoo>
