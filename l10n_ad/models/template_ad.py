@@ -1,4 +1,4 @@
-from odoo import models
+from odoo import Command, _, models
 from odoo.addons.account.models.chart_template import template
 
 
@@ -7,8 +7,8 @@ class AccountChartTemplate(models.AbstractModel):
 
     @template('ad')
     def _get_ad_template_data(self):
-        """ Hem posat un raise exception i aqui entra """
         return {
+            'name': _('Base'),
             'property_account_receivable_id': 'l10n_ad.account_common_430',
             'property_account_payable_id': 'l10n_ad.account_common_400',
             'currency_id': 'base.EUR',
