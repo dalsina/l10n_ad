@@ -182,6 +182,7 @@
 "account_common_570","Caixa, euros","570","asset_cash","False"
 "account_common_571","Caixa, moneda estrangera","571","asset_cash","False"
 "pgc_572_child","Bancs i institucions de crèdit c/c vista, euros","572","asset_cash","False"
+"account_common_5729","Compte Transitori","5729","asset_current","True"
 "account_common_573","Bancs i institucions de crèdit c/c vista, moneda estrangera","573","asset_cash","False"
 "account_common_574","Bancs i institucions de crèdit, comptes d'estalvi, euros","574","asset_cash","False"
 "account_common_575","Bancs i institucions de crèdit, comptes d'estalvi, moneda estrangera","575","asset_cash","False"
