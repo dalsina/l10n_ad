@@ -7,18 +7,18 @@ class AccountChartTemplate(models.AbstractModel):
 
     @template('ad')
     def _get_ad_template_data(self):
+        raise Exception("¡La función se ejecuta 1!")
         return {
-            'template_data': {
-                'property_account_receivable_id': 'l10n_ad.account_common_430',
-                'property_account_payable_id': 'l10n_ad.account_common_400',
-                'currency_id': 'base.EUR',
-                'country_id': 'base.ad',
-                'code_digits': '8',
-            },
+            'property_account_receivable_id': 'l10n_ad.account_common_430',
+            'property_account_payable_id': 'l10n_ad.account_common_400',
+            'currency_id': 'base.EUR',
+            'country_id': 'base.ad',
+            'code_digits': '8',
         }
 
     @template('ad', 'res.company')
     def _get_ad_res_company_data(self):
+        raise Exception("¡La función se ejecuta! 2")
         return {
             self.env.company.id: {
                 'account_sale_tax_id': 'l10n_ad.account_tax_template_s_igi45',
