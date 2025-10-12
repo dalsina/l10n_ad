@@ -12,8 +12,8 @@
     "data": [
         'data/account.account-full.csv',
         'data/account.account-common.csv',
-        'data/account_tax-ad.xml',
         'data/account_tax_group-ad.xml',
+        'data/account_tax-ad.xml',
         'data/fiscal_positions-ad.xml',
         'data/account_chart_template.xml',
     ],
