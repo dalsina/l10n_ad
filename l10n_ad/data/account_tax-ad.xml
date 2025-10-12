@@ -15,8 +15,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_477'), 'factor_percent': 100}),
@@ -36,8 +36,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_472'), 'factor_percent': 100}),
@@ -61,8 +61,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_477'), 'factor_percent': 100}),
@@ -82,8 +82,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_472'), 'factor_percent': 100}),
@@ -107,8 +107,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_477'), 'factor_percent': 100}),
@@ -128,8 +128,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_472'), 'factor_percent': 100}),
@@ -153,8 +153,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_s_igi0')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_477'), 'factor_percent': 100}),
@@ -174,8 +174,8 @@
         <field name="country_id" ref="base.ad"/>
         <field name="company_id" ref="base.main_company"/>
         <field name="active">True</field>
-        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_retencions5'), ref('fp_retencions10')])]"/>
-        <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/>
+        <field name="fiscal_position_ids" eval="[(6, 0, [ref('fp_general')])]"/>
+        <!-- <field name="original_tax_ids" eval="[(6, 0, [ref('account_tax_template_p_retencions5')])]"/> -->
         <field name="repartition_line_ids" eval="[
                 (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
                 (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('account_common_472'), 'factor_percent': 100}),
