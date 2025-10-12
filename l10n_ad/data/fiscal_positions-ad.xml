@@ -19,13 +19,5 @@
             <field name="country_id" ref="base.ad"/>
         </record>
 
-        <record id="fp_retencions5" model="account.fiscal.position">
-            <field name="name">Retenció IRPF 5%</field>
-        </record>
-
-        <record id="fp_retencions10" model="account.fiscal.position">
-            <field name="name">Retenció IRPF 10%</field>
-        </record>
-
     </data>
 </odoo>

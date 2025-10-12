@@ -1,0 +1,326 @@
+id,code,name,account_type,reconcile
+a101,101,Fons Social,liability_non_current,False
+a102,102,Capital,liability_non_current,False
+a108,108,Accions o participacions pròpies en situacions especials,liability_non_current,False
+a109,109,Accions o participacions pròpies per reducció de capital,liability_non_current,False
+a110,110,Prima d'emissió,liability_non_current,False
+a112,112,Reserva legal,liability_non_current,False
+a113,113,Reserves Estatutàries,liability_non_current,False
+a114,114,Reserves Voluntàries,liability_non_current,False
+a118,118,Aportacions de socis o propietaris,liability_non_current,False
+a119,119,Altres reserves,liability_non_current,False
+a131,131,Donacions i llegats de capital,liability_non_current,False
+a141,141,Provisió per tributs,liability_non_current,True
+a143,143,"Provisió per desmantellament, retirament o rehabilitació de l'immobilitzat",liability_non_current,True
+a145,145,Provisió per actuacions mediambientals,liability_non_current,True
+a160,160,Deutes a llarg termini amb entitats de crèdit vinculades,liability_non_current,False
+a161,161,"Proveïdors d'immobilitzat a llarg termini, parts vinculades",liability_non_current,False
+a162,162,"Creditors per arrendament financer a llarg termini, parts vinculades",liability_non_current,False
+a163,163,Altres deutes a llarg termini amb parts vinculades,liability_non_current,False
+a170,170,Deutes a llarg termini amb entitats de crèdit,liability_non_current,False
+a171,171,Deutes a llarg termini,liability_non_current,False
+a173,173,Proveïdors d'immobilitzat a llarg termini,liability_non_current,False
+a174,174,Creditors per arrendament financer a llarg termini,liability_non_current,False
+a175,175,Efectes a pagar a llarg termini,liability_non_current,False
+a177,177,Obligacions i bons,liability_non_current,False
+a179,179,Deutes representats en altres valors negociables,liability_non_current,False
+a180,180,Fiances rebudes a llarg termini,liability_non_current,False
+a181,181,Bestretes rebudes per vendes o prestacions de serveis a llarg termini,liability_non_current,False
+a185,185,Dipòsits rebuts a llarg termini,liability_non_current,False
+a194,194,Capital emès pendent d'inscripció al Registre de Societats,liability_non_current,False
+a200,200,Despeses d'establiment,asset_fixed,False
+a201,201,Investigació,asset_fixed,False
+a202,202,Desenvolupament,asset_fixed,False
+a203,203,Concessions administratives,asset_fixed,False
+a205,205,Fons de comerç,asset_fixed,False
+a206,206,Drets de traspàs,asset_fixed,False
+a207,207,Aplicacions informàtiques,asset_fixed,False
+a208,208,Altre immobilitzat intangible,asset_fixed,False
+a209,209,Bestretes per immobilitzat intangible,asset_fixed,False
+a210,210,Terrenys i béns naturals,asset_fixed,False
+a211,211,Construccions,asset_fixed,False
+a212,212,Instal·lacions tècniques,asset_fixed,False
+a213,213,Maquinària,asset_fixed,False
+a214,214,Utillatge,asset_fixed,False
+a215,215,Altres instal·lacions,asset_fixed,False
+a216,216,Mobiliari,asset_fixed,False
+a217,217,Equips per a processos d'informació,asset_fixed,False
+a218,218,Elements de transport,asset_fixed,False
+a219,219,Altre immobilitzat tangible,asset_fixed,False
+a220,220,Inversions en terrenys i béns naturals,asset_fixed,False
+a221,221,Inversions en construccions,asset_fixed,False
+a230,230,Adaptació de terrenys i béns naturals,asset_fixed,False
+a231,231,Construccions en curs,asset_fixed,False
+a232,232,Instal·lacions tècniques en muntatge,asset_fixed,False
+a233,233,Maquinària en muntatge,asset_fixed,False
+a237,237,Equips per processos d'informació en muntatge,asset_fixed,False
+a238,238,Altre immobilitzat tangible en curs,asset_fixed,False
+a239,239,Bestretes per immobilitzat tangible,asset_fixed,False
+a241,241,Valors representatius de deute a llarg termini de parts vinculades,asset_fixed,False
+a242,242,Crèdits a llarg termini a parts vinculades,asset_fixed,False
+a250,250,Inversions financeres a llarg termini en instruments de patrimoni,asset_fixed,False
+a251,251,Valors representatius de deute a llarg termini,asset_fixed,False
+a252,252,Crèdits a llarg termini,asset_fixed,False
+a253,253,Crèdits a llarg termini per alienació d'immobilitzat,asset_fixed,False
+a254,254,Crèdits a llarg termini al personal,asset_fixed,False
+a258,258,Imposicions a llarg termini,asset_fixed,False
+a260,260,Fiances constituïdes a llarg termini,asset_fixed,False
+a265,265,Dipòsits constituïts a llarg termini,asset_fixed,False
+a280,280,Amortització acumulada de l'immobilitzat intangible,asset_fixed,False
+a281,281,Amortització acumulada de l'immobilitzat tangible,asset_fixed,False
+a282,282,Amortització acumulada de les inversions immobiliàries,asset_fixed,False
+a290,290,Deteriorament de valor de l'immobilitzat intangible,asset_fixed,False
+a291,291,Deteriorament de valor de l'immobilitzat tangible,asset_fixed,False
+a292,292,Deteriorament de valor de les inversions immobiliàries,asset_fixed,False
+a293,293,Deteriorament de valor de participacions a llarg termini en parts vinculades,asset_fixed,False
+a294,294,Deteriorament de valor de valors representatius de deute a llarg termini de parts vinculades,asset_fixed,False
+a295,295,Deteriorament de valor de crèdits a llarg termini a parts vinculades,asset_fixed,False
+a296,296,Deteriorament de valor de participacions en el patrimoni net a llarg termini,asset_fixed,False
+a297,297,Deteriorament de valor de valors representatius de deute a llarg termini,asset_fixed,False
+a298,298,Deteriorament de valor de crèdits a llarg termini,asset_fixed,False
+a300,300,Mercaderies A,asset_current,False
+a301,301,Mercaderies B,asset_current,False
+a310,310,Matèries primeres A,asset_current,False
+a311,311,Matèries primeres B,asset_current,False
+a320,320,Elements i conjunts incorporables,asset_current,False
+a321,321,Combustibles,asset_current,False
+a322,322,Recanvis,asset_current,False
+a325,325,Materials diversos,asset_current,False
+a326,326,Embalatges,asset_current,False
+a327,327,Envasos,asset_current,False
+a328,328,Material d'oficina,asset_current,False
+a330,330,Productes en curs A,asset_current,False
+a331,331,Productes en curs B,asset_current,False
+a340,340,Productes semiacabats A,asset_current,False
+a341,341,Productes semiacabats B,asset_current,False
+a350,350,Productes acabats A,asset_current,False
+a351,351,Productes acabats B,asset_current,False
+a360,360,Subproductes A,asset_current,False
+a361,361,Subproductes B,asset_current,False
+a366,366,Residus B,asset_current,False
+a365,365,Residus A,asset_current,False
+a368,368,Materials recuperats A,asset_current,False
+a369,369,Materials recuperats B,asset_current,False
+a390,390,Deteriorament de valor de les mercaderies,asset_current,False
+a391,391,Deteriorament de valor de les matèries primeres,asset_current,False
+a392,392,Deteriorament de valor d'altres aprovisionaments,asset_current,False
+a393,393,Deteriorament de valor dels productes en curs,asset_current,False
+a394,394,Deteriorament de valor dels productes semiacabats,asset_current,False
+a395,395,Deteriorament de valors dels productes acabats,asset_current,False
+a396,396,"Deteriorament de valor dels subproductes, residus i materials recuperats",asset_current,False
+a400,400,Proveïdors,liability_payable,True
+a401,401,"Proveïdors, efectes comercials a pagar",liability_payable,True
+a403,403,"Proveïdors, empreses del grup",liability_payable,True
+a404,404,"Proveïdors, empreses associades",liability_payable,True
+a405,405,"Proveïdors, altres parts vinculades",liability_payable,True
+a406,406,Envasos i embalatges a retornar a proveïdors,liability_payable,True
+a407,407,Bestretes a proveïdors,liability_payable,True
+a410,410,Creditors per prestacions de serveis,liability_payable,True
+a411,411,"Creditors, efectes comercials a pagar",liability_payable,True
+a430,430,Clients,asset_receivable,True
+a431,431,"Clients, efectes comercials a cobrar",asset_receivable,True
+a432,432,"Clients, operacions de factoring",asset_receivable,True
+a433,433,"Clients, empreses del grup",asset_receivable,True
+a434,434,"Clients, empreses associades",asset_receivable,True
+a435,435,"Clients, altres empreses vinculades",asset_receivable,True
+a436,436,Clients de cobrament dubtós,asset_receivable,True
+a437,437,Envasos i embalatges a retornar per clients,asset_receivable,True
+a438,438,Bestretes de clients,asset_receivable,True
+a440,440,Deutors,asset_receivable,True
+a441,441,"Deutors, efectes comercials a cobrar",asset_receivable,True
+a446,446,Deutors de cobrament dubtós,asset_receivable,True
+a460,460,Bestretes de remuneracions,asset_receivable,True
+a465,465,Remuneracions pendents de pagament,liability_payable,True
+a470,470,"Administracions públiques, deutor",asset_current,True
+a472,472,"Administracions públiques, import indirecte suportat",asset_current,False
+a473,473,"Administracions públiques, retencions i pagaments a compte per ISI",asset_current,True
+a475,475,"Administracions públiques, creditor",liability_current,True
+a476,476,"Caixa Andorrana de Seguretat Social, creditors",liability_current,False
+a477,477,"Administracions públiques, impost indirecte repercutit",liability_current,False
+a480,480,Despeses anticipades,asset_current,False
+a485,485,Ingressos anticipats,liability_current,False
+a493,493,Deteriorament de valor de crèdits per operacions comercials amb parts vinculades,liability_current,True
+a499,499,Provisions per operacions comercials,liability_current,True
+a500,500,Obligacions i bons a curt termini,liability_current,False
+a505,505,Deutes representats en altres valors negociables a curt termini,liability_current,False
+a506,506,Interessos a curt termini d'emprèstits i altres emissions anàlogues,liability_current,False
+a510,510,Deutes a curt termini amb entitats de crèdit vinculades,liability_current,False
+a511,511,"Proveïdors d'immobilitzat a curt termini, parts vinculades",liability_current,False
+a512,512,"Creditors per arrendament financer a curt termini, parts vinculades",liability_current,False
+a513,513,Altres deutes a curt termini amb parts vinculades,liability_current,False
+a514,514,Interessos a curt termini de deutes amb parts vinculades,liability_current,False
+a520,520,Deutes a curt termini amb entitats de crèdit,liability_current,True
+a523,523,Proveïdors d'immobilitzat a curt termini,liability_payable,True
+a524,524,Creditors per arrendament financer a curt termini,liability_current,False
+a526,526,Dividend actiu a pagar,liability_payable,True
+a527,527,Interessos a curt termini de deutes amb entitats de crèdit,liability_current,False
+a528,528,Altres deutes a curt termini,liability_current,False
+a529,529,Provisions a curt termini,liability_current,True
+a530,530,Participacions a curt termini en parts vinculades,asset_current,False
+a531,531,Crèdits i valors representatius de deute a curt termini de parts vinculades,asset_current,False
+a533,533,Interessos a curt termini de crèdits i valors representatius de deute de parts vinculades,asset_current,False
+a535,535,Dividend a cobrar d'inversions financeres en parts vinculades,asset_current,False
+a540,540,Inversions financeres a curt termini en instruments de patrimoni,asset_current,False
+a541,541,Crèdits i valors representatius de deute a curt termini,asset_current,False
+a543,543,Crèdits a curt termini per alienació d'immobilitzat,asset_current,False
+a544,544,Crèdits a curt termini al personal,asset_current,False
+a545,545,Dividend a cobrar,asset_current,False
+a546,546,Interessos a curt termini de crèdits i valors representatius de deutes,asset_current,False
+a548,548,Imposicions a curt termini,asset_current,False
+a550,550,Titular de l'explotació,asset_current,False
+a552,552,Compte corrent amb altres persones i entitats vinculades,asset_current,False
+a554,554,Compte corrent amb unions temporals d'empreses i comunitats de béns,asset_current,False
+a555,555,Partides pendents d'aplicació,liability_current,False
+a556,556,Desemborsaments exigits sobre participacions en el patrimoni net,liability_current,False
+a557,557,Dividend actiu a compte,asset_current,False
+a560,560,Fiances rebudes a curt termini,liability_current,False
+a561,561,Dipòsits rebuts a curt termini,liability_current,False
+a565,565,Fiances constituïdes a curt termini,asset_current,False
+a566,566,Dipòsits constituïts a curt termini,asset_current,False
+a567,567,Interessos pagats per anticipat,asset_current,False
+a568,568,Interessos cobrats per anticipat,liability_current,False
+a570,570,"Caixa, euros",asset_cash,False
+a571,571,"Caixa, moneda estrangera",asset_cash,False
+pgc_572_child,572,"Bancs i institucions de crèdit c/c vista, euros",asset_cash,False
+a5729,5729,Compte Transitori,asset_current,True
+a573,573,"Bancs i institucions de crèdit c/c vista, moneda estrangera",asset_cash,False
+a574,574,"Bancs i institucions de crèdit, comptes d'estalvi, euros",asset_cash,False
+a575,575,"Bancs i institucions de crèdit, comptes d'estalvi, moneda estrangera",asset_cash,False
+a576,576,Inversions a curt termini de gran liquiditat,asset_current,False
+a593,593,Deteriorament de valor de participacions a curt termini en parts vinculades,asset_current,False
+a594,594,Deteriorament de valor de valors representatius de deute a curt termini de parts vinculades,asset_current,False
+a595,595,Deteriorament de valor de crèdits a curt termini en parts vinculades,asset_current,False
+a597,597,Deteriorament de valor de valors representatius de deute a curt termini,asset_current,False
+a598,598,Deteriorament de valor de crèdits a curt termini,asset_current,False
+a600,600,Compres de mercaderies,expense,False
+a601,601,Compres de matèries primeres,expense,False
+a602,602,Compres d'altres aprovisionaments,expense,False
+a606,606,Descomptes sobre compres per pagament immediat,expense,False
+a607,607,Treballs realitzats per altres empreses,expense,False
+a608,608,Devolucions de compres i operacions similars,expense,False
+a609,609,Ràpels per compres,expense,False
+a610,610,Variació d'existències de mercaderies,expense,False
+a611,611,Variació d'existències de matèries primeres,expense,False
+a612,612,Variació d'existències d'altres aprovisionaments,expense,False
+a620,620,Despeses en investigació i desenvolupament de l'exercici,expense,False
+a621,621,Arrendaments i cànons,expense,False
+a622,622,Reparacions i conservació,expense,False
+a623,623,Serveis de professionals independents,expense,False
+a624,624,Transports,expense,False
+a625,625,Primes d'assegurances,expense,False
+a626,626,Serveis bancaris i similars,expense,False
+a627,627,"Publicitat, propaganda i relacions públiques",expense,False
+a628,628,Subministraments,expense,False
+a629,629,Altres serveis,expense,False
+a631,631,Altres tributs,expense,False
+a640,640,Sous i salaris,expense,False
+a641,641,Indemnitzacions,expense,False
+a642,642,Caixa Andorrana de Seguretat Social a càrrec de l'empresari,expense,False
+a649,649,Altres despeses socials,expense,False
+a660,660,Despeses financeres per actualització de provisions,expense,False
+a661,661,Interessos d'obligacions i bons,expense,False
+a662,662,Interessos de deutes,expense,False
+a664,664,Despeses per dividends d'accions o participacions considerades passius financers,expense,False
+a665,665,Interessos per descompte d'efectes i operacions de factoring,expense,False
+a666,666,Pèrdues en participacions i valors representatius de deute,expense,False
+a667,667,Pèrdues de crèdits no comercials,expense,False
+a668,668,Diferències negatives de canvi,expense,False
+a669,669,Altres despeses financeres,expense,False
+a670,670,Pèrdues procedents de l'immobilitzat intangible,expense,False
+a672,672,Pèrdues procedents de les inversions immobiliàries,expense,False
+a673,673,Pèrdues procedents de participacions a llarg termini en parts vinculades,expense,False
+a675,675,Pèrdues per operacions amb obligacions pròpies,expense,False
+a678,678,Despeses excepcionals,expense,False
+a680,680,Amortització de l'immobilitzat intangible,expense,False
+a681,681,Amortització de l'immobilitzat tangible,expense,False
+a682,682,Amortització de les inversions immobiliàries,expense,False
+a690,690,Pèrdues per deteriorament de l'immobilitzat intangible,expense,False
+a692,692,Pèrdues per deteriorament de les inversions immobiliàries,expense,False
+a693,693,Pèrdues per deteriorament d'existències,expense,False
+a695,695,Dotació a la provisió per operacions comercials,expense,False
+a696,696,Pèrdues per deteriorament de participacions i valors representatius de deute a llarg termini,expense,False
+a697,697,Pèrdues per deteriorament de crèdits a llarg termini,expense,False
+a698,698,Pèrdues per deteriorament de participacions i valors representatius de deute a curt termini,expense,False
+a699,699,Pèrdues per deteriorament de crèdits a curt termini,expense,False
+a700,700,Vendes de mercaderies,income,False
+a701,701,Vendes de productes acabats,income,False
+a702,702,Vendes de productes semiacabats,income,False
+a703,703,Vendes de subproductes i residus,income,False
+a704,704,Vendes d'envasos i embalatges,income,False
+a705,705,Prestació de serveis,income,False
+a706,706,Descompte sobre vendes per pagament immediat,income,False
+a708,708,Devolucions de vendes i operacions similars,income,False
+a709,709,Ràpels sobre vendes,income,False
+a710,710,Variació d'existències de productes en curs,income,False
+a711,711,Variació d'existències de productes semiacabats,income,False
+a712,712,Variació d'existències de productes acabats,income,False
+a713,713,"Variació d'existències de subproductes, residus i materials recuperats",income,False
+a730,730,Treballs realitzats per a l'immobilitzat intangible,income,False
+a731,731,Treballs realitzats per a l'immobilitzat tangible,income,False
+a732,732,Treballs realitzats en inversions immobiliàries,income,False
+a733,733,Treballs realitzats per a l'immobilitzat tangible en curs,income,False
+a740,740,"Subvencions, donacions i llegats a l'explotació",income,False
+a746,746,"Subvencions, donacions i llegats de capital transferits al resultat de l'exercici",income,False
+a747,747,"Altres subvencions, donacions i llegats transferits al resultat de l'exercici",income,False
+a752,752,Ingressos per arrendaments,income,False
+a753,753,Ingressos de propietat industrial cedida en explotació,income,False
+a754,754,Ingressos per comissions,income,False
+a755,755,Ingressos per serveis al personal,income,False
+a759,759,Ingressos per serveis diversos,income,False
+a760,760,Ingressos de participacions en instruments de patrimoni,income,False
+a761,761,Interessos de valors representatius de deute,income,False
+a762,762,Interessos de crèdits,income,False
+a766,766,Beneficis en participacions i valors representatius de deute,income,False
+a768,768,Diferències positives de canvi,income_other,False
+a769,769,Altres ingressos financers,income,False
+a770,770,Beneficis procedents de l'immobilitzat intangible,income,False
+a771,771,Beneficis procedents de l'immobilitzat tangible,income,False
+a772,772,Beneficis procedents de les inversions immobiliàries,income,False
+a773,773,Beneficis procedents de participacions a llarg termini en parts vinculades,income,False
+a775,775,Beneficis per operacions amb obligacions pròpies,income,False
+a778,778,Ingressos excepcionals,income,False
+a790,790,Reversió del deteriorament de l'immobilitzat intangible,income,False
+a792,792,Reversió del deteriorament de les inversions immobiliàries,income,False
+a793,793,Reversió del deteriorament d'existències,income,False
+a796,796,Reversió del deteriorament de participacions i valors representatius de deute a llarg termini,income,False
+a797,797,Reversió del deteriorament de crèdits a llarg termini,income,False
+a798,798,Reversió del deteriorament de participacions i valors representatius de deute a curt termini,income,False
+a799,799,Reversió del deteriorament de crèdits a curt termini,income,False
+a100,100,Capital social,liability_non_current,False
+a115,115,Reserves per accions pròpies,equity,False
+a116,116,Reserva de revaloració,equity,False
+a120,120,Romanent,liability_non_current,False
+a121,121,Resultats negatius d’exercicis anteriors,liability_non_current,False
+a129,129,Resultat de l’exercici,equity_unaffected,False
+a130,130,Subvencions oficials de capital,liability_non_current,False
+a132,132,"Altres subvencions, donacions i llegats",liability_non_current,False
+a146,146,Provisió per altres responsabilitats,liability_non_current,True
+a189,189,Garanties financeres a llarg termini,liability_non_current,False
+a204,204,Propietat industrial,asset_fixed,False
+a240,240,Participacions a llarg termini en parts vinculades,asset_fixed,False
+a466,466,Remuneracions mitjançant sistemes d’aportació definida pendents de pagament,liability_payable,True
+a490,490,Deteriorament de valor de crèdits per operacions comercials,liability_non_current,False
+a551,551,Compte corrent amb socis i administradors,asset_current,False
+a569,569,Garanties financeres a curt termini,liability_current,False
+a580,580,Immobilitzat,asset_current,False
+a581,581,Inversions amb persones i entitats vinculades,asset_current,False
+a582,582,Inversions financeres,asset_current,False
+a583,583,"Existències, deutors comercials i altres comptes a cobrar",asset_current,False
+a584,584,Altres actius,asset_current,False
+a585,585,Provisions,liability_current,False
+a586,586,Deutes amb característiques especials,liability_current,False
+a587,587,Deutes amb persones i entitats vinculades,liability_current,False
+a588,588,Creditors comercials i altres comptes a pagar,liability_current,False
+a589,589,Altres passius,liability_current,False
+a599,599,Deteriorament de valor d’actius no corrents mantinguts per a la venda,asset_current,False
+a643,643,Retribucions a llarg termini mitjançant sistemes d’aportació definida,expense,False
+a650,650,Pèrdues de crèdits comercials incobrables,expense,False
+a659,659,Altres pèrdues de gestió corrent,expense,False
+a663,663,"Pèrdues per venda, venciment o valoració d’instruments financers pel seu valor raonable",expense,False
+a671,671,Pèrdues procedents de l’immobilitzat tangible,expense,False
+a691,691,Pèrdues per deteriorament de l’immobilitzat tangible,expense,False
+a694,694,Pèrdues per deteriorament de crèdits per operacions comercials,expense,False
+a763,763,"Beneficis per venda, venciment o valoració d’instruments financers pel seu valor raonable",income,False
+a791,791,Reversió del deteriorament de l’immobilitzat tangible,income,False
+a794,794,Reversió del deteriorament de crèdits per operacions comercials,income,False
+a795,795,Excés de provisions,income,False

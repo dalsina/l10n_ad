@@ -12,9 +12,6 @@
         'base_vat',
     ],
     "data": [
-        'data/account_tax_group-ad.xml',
-        'data/fiscal_positions-ad.xml',
-        'data/account_tax-ad.xml',
     ],
     'installable': True,
     'l10n': True,

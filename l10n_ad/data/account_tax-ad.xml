@@ -184,46 +184,4 @@
             ]"/>
     </record>
 
-    <!-- ========================================================= -->
-    <!-- RETENCIONES -->
-    <!-- ========================================================= -->
-
-    <record id="account_tax_template_s_retencions5" model="account.tax">
-        <field name="name">Retenció IRPF 5% Vendes</field>
-        <field name="description">IRPF 5%</field>
-        <field name="amount">-5</field>
-        <field name="amount_type">percent</field>
-        <field name="type_tax_use">sale</field>
-        <field name="tax_scope">service</field>
-        <field name="tax_group_id" ref="tax_group_retencions_5"/>
-        <field name="country_id" ref="base.ad"/>
-        <field name="company_id" ref="base.main_company"/>
-        <field name="active">True</field>
-        <field name="repartition_line_ids" eval="[
-                (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
-                (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('a473'), 'factor_percent': 100}),
-                (0, 0, {'repartition_type': 'base', 'document_type': 'refund', 'factor_percent': 100}),
-                (0, 0, {'repartition_type': 'tax', 'document_type': 'refund', 'account_id': ref('a473'), 'factor_percent': 100}),
-            ]"/>
-    </record>
-
-    <record id="account_tax_template_p_retencions5" model="account.tax">
-        <field name="name">Retenció IRPF 5% Compres</field>
-        <field name="description">IRPF 5%</field>
-        <field name="amount">-5</field>
-        <field name="amount_type">percent</field>
-        <field name="type_tax_use">purchase</field>
-        <field name="tax_scope">service</field>
-        <field name="tax_group_id" ref="tax_group_retencions_5"/>
-        <field name="country_id" ref="base.ad"/>
-        <field name="company_id" ref="base.main_company"/>
-        <field name="active">True</field>
-        <field name="repartition_line_ids" eval="[
-                (0, 0, {'repartition_type': 'base', 'document_type': 'invoice', 'factor_percent': 100}),
-                (0, 0, {'repartition_type': 'tax', 'document_type': 'invoice', 'account_id': ref('a475'), 'factor_percent': 100}),
-                (0, 0, {'repartition_type': 'base', 'document_type': 'refund', 'factor_percent': 100}),
-                (0, 0, {'repartition_type': 'tax', 'document_type': 'refund', 'account_id': ref('a475'), 'factor_percent': 100}),
-            ]"/>
-    </record>
-
 </odoo>
