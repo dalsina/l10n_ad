@@ -11,4 +11,6 @@ class AccountChartTemplate(models.AbstractModel):
             'property_account_receivable_id': 'account_common_430',
             'property_account_payable_id': 'account_common_400',
             'code_digits': '8',
+            'currency_id': 'base.EUR',
+            'country_id': 'base.ad',
         }

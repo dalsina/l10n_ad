@@ -15,7 +15,6 @@
         'data/account_tax_group-ad.xml',
         'data/fiscal_positions-ad.xml',
         'data/account_tax-ad.xml',
-        'data/account_chart_template.xml',
     ],
     'installable': True,
     'images': [
