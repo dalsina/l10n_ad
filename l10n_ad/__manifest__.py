@@ -2,7 +2,7 @@
     "name": "Andorra - Comptabilitat",
     "author": "IPGrup x IdeAnd",
     "category": "Accounting/Localizations/Account Charts",
-    "version": "19.0.0.0.0",
+    "version": "19.0.1.0.0",
     'icon': '',
     'countries': ['ad'],
     'depends': [
