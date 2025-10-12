@@ -1,8 +1,6 @@
-id,name,country_id,sequence
-tax_group_igi_45,"IGI 4,5%",base.ad,10
-tax_group_igi_25,"IGI 2,5%",base.ad,20
-tax_group_igi_1,IGI 1%,base.ad,30
-tax_group_igi_0,IGI 0%,base.ad,40
-tax_group_igi_95,"IGI 9,5%",base.ad,50
-tax_group_retencions_5,Retencions 5%,base.ad,60
-tax_group_retencions_10,Retencions 10%,base.ad,70
+"id","name","country_id","sequence"
+"tax_group_igi_45","IGI 4,5%","base.ad","10"
+"tax_group_igi_25","IGI 2,5%","base.ad","20"
+"tax_group_igi_1","IGI 1%","base.ad","30"
+"tax_group_igi_0","IGI 0%","base.ad","40"
+"tax_group_igi_95","IGI 9,5%","base.ad","50"
