@@ -5,3 +5,5 @@
 "tax_group_igi_1","IGI 1%","base.ad","30"
 "tax_group_igi_0","IGI 0%","base.ad","40"
 "tax_group_igi_ex","Exempte","base.ad","50"
+"tax_group_dua_45","DUA 4,5%","base.ad","60"
+"tax_group_dua_1","DUA 1%","base.ad","70"

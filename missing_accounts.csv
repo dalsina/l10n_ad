@@ -188,16 +188,6 @@ a609,609,Ràpels per compres,expense,False
 a610,610,Variació d'existències de mercaderies,expense,False
 a611,611,Variació d'existències de matèries primeres,expense,False
 a612,612,Variació d'existències d'altres aprovisionaments,expense,False
-a620,620,Despeses en investigació i desenvolupament de l'exercici,expense,False
-a621,621,Arrendaments i cànons,expense,False
-a622,622,Reparacions i conservació,expense,False
-a623,623,Serveis de professionals independents,expense,False
-a624,624,Transports,expense,False
-a625,625,Primes d'assegurances,expense,False
-a626,626,Serveis bancaris i similars,expense,False
-a627,627,Publicitat, propaganda i relacions públiques,expense,False
-a628,628,Subministraments,expense,False
-a629,629,Altres serveis,expense,False
 a631,631,Altres tributs,expense,False
 a640,640,Sous i salaris,expense,False
 a641,641,Indemnitzacions,expense,False

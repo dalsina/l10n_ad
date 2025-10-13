@@ -1,3 +1,4 @@
 "id","sequence","name","auto_apply","vat_required","country_id","country_group_id"
 "fp_general","10","Règim General","1","","base.ad",""
 "fp_exportacio","20","Exportació","1","","",""
+"fp_dua","30","DUA","0","","",""
