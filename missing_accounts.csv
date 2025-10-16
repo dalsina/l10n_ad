@@ -23,56 +23,6 @@ a180,180,Fiances rebudes a llarg termini,liability_non_current,False
 a181,181,Bestretes rebudes per vendes o prestacions de serveis a llarg termini,liability_non_current,False
 a185,185,Dipòsits rebuts a llarg termini,liability_non_current,False
 a194,194,Capital emès pendent d'inscripció al Registre de Societats,liability_non_current,False
-a200,200,Despeses d'establiment,asset_fixed,False
-a201,201,Investigació,asset_fixed,False
-a202,202,Desenvolupament,asset_fixed,False
-a203,203,Concessions administratives,asset_fixed,False
-a205,205,Fons de comerç,asset_fixed,False
-a206,206,Drets de traspàs,asset_fixed,False
-a207,207,Aplicacions informàtiques,asset_fixed,False
-a208,208,Altre immobilitzat intangible,asset_fixed,False
-a209,209,Bestretes per immobilitzat intangible,asset_fixed,False
-a210,210,Terrenys i béns naturals,asset_fixed,False
-a211,211,Construccions,asset_fixed,False
-a212,212,Instal·lacions tècniques,asset_fixed,False
-a213,213,Maquinària,asset_fixed,False
-a214,214,Utillatge,asset_fixed,False
-a215,215,Altres instal·lacions,asset_fixed,False
-a216,216,Mobiliari,asset_fixed,False
-a217,217,Equips per a processos d'informació,asset_fixed,False
-a218,218,Elements de transport,asset_fixed,False
-a219,219,Altre immobilitzat tangible,asset_fixed,False
-a220,220,Inversions en terrenys i béns naturals,asset_fixed,False
-a221,221,Inversions en construccions,asset_fixed,False
-a230,230,Adaptació de terrenys i béns naturals,asset_fixed,False
-a231,231,Construccions en curs,asset_fixed,False
-a232,232,Instal·lacions tècniques en muntatge,asset_fixed,False
-a233,233,Maquinària en muntatge,asset_fixed,False
-a237,237,Equips per processos d'informació en muntatge,asset_fixed,False
-a238,238,Altre immobilitzat tangible en curs,asset_fixed,False
-a239,239,Bestretes per immobilitzat tangible,asset_fixed,False
-a241,241,Valors representatius de deute a llarg termini de parts vinculades,asset_fixed,False
-a242,242,Crèdits a llarg termini a parts vinculades,asset_fixed,False
-a250,250,Inversions financeres a llarg termini en instruments de patrimoni,asset_fixed,False
-a251,251,Valors representatius de deute a llarg termini,asset_fixed,False
-a252,252,Crèdits a llarg termini,asset_fixed,False
-a253,253,Crèdits a llarg termini per alienació d'immobilitzat,asset_fixed,False
-a254,254,Crèdits a llarg termini al personal,asset_fixed,False
-a258,258,Imposicions a llarg termini,asset_fixed,False
-a260,260,Fiances constituïdes a llarg termini,asset_fixed,False
-a265,265,Dipòsits constituïts a llarg termini,asset_fixed,False
-a280,280,Amortització acumulada de l'immobilitzat intangible,asset_fixed,False
-a281,281,Amortització acumulada de l'immobilitzat tangible,asset_fixed,False
-a282,282,Amortització acumulada de les inversions immobiliàries,asset_fixed,False
-a290,290,Deteriorament de valor de l'immobilitzat intangible,asset_fixed,False
-a291,291,Deteriorament de valor de l'immobilitzat tangible,asset_fixed,False
-a292,292,Deteriorament de valor de les inversions immobiliàries,asset_fixed,False
-a293,293,Deteriorament de valor de participacions a llarg termini en parts vinculades,asset_fixed,False
-a294,294,Deteriorament de valor de valors representatius de deute a llarg termini de parts vinculades,asset_fixed,False
-a295,295,Deteriorament de valor de crèdits a llarg termini a parts vinculades,asset_fixed,False
-a296,296,Deteriorament de valor de participacions en el patrimoni net a llarg termini,asset_fixed,False
-a297,297,Deteriorament de valor de valors representatius de deute a llarg termini,asset_fixed,False
-a298,298,Deteriorament de valor de crèdits a llarg termini,asset_fixed,False
 a300,300,Mercaderies A,asset_current,False
 a301,301,Mercaderies B,asset_current,False
 a310,310,Matèries primeres A,asset_current,False
@@ -206,17 +156,6 @@ a672,672,Pèrdues procedents de les inversions immobiliàries,expense,False
 a673,673,Pèrdues procedents de participacions a llarg termini en parts vinculades,expense,False
 a675,675,Pèrdues per operacions amb obligacions pròpies,expense,False
 a678,678,Despeses excepcionals,expense,False
-a680,680,Amortització de l'immobilitzat intangible,expense,False
-a681,681,Amortització de l'immobilitzat tangible,expense,False
-a682,682,Amortització de les inversions immobiliàries,expense,False
-a690,690,Pèrdues per deteriorament de l'immobilitzat intangible,expense,False
-a692,692,Pèrdues per deteriorament de les inversions immobiliàries,expense,False
-a693,693,Pèrdues per deteriorament d'existències,expense,False
-a695,695,Dotació a la provisió per operacions comercials,expense,False
-a696,696,Pèrdues per deteriorament de participacions i valors representatius de deute a llarg termini,expense,False
-a697,697,Pèrdues per deteriorament de crèdits a llarg termini,expense,False
-a698,698,Pèrdues per deteriorament de participacions i valors representatius de deute a curt termini,expense,False
-a699,699,Pèrdues per deteriorament de crèdits a curt termini,expense,False
 a701,701,Vendes de productes acabats,income,False
 a702,702,Vendes de productes semiacabats,income,False
 a703,703,Vendes de subproductes i residus,income,False
