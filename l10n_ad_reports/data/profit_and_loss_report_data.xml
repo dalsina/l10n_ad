@@ -15,6 +15,7 @@
             <record id="financial_report_es_profit_and_loss_column" model="account.report.column">
                 <field name="name">Balance</field>
                 <field name="name@es">Saldo</field>
+                <field name="name@ca_ES">Saldo</field>
                 <field name="expression_label">balance</field>
             </record>
         </field>
@@ -22,6 +23,7 @@
             <record id="es_profit_and_loss_line_sum_a" model="account.report.line">
                 <field name="name">A) RESULTS FROM OPERATING ACTIVITIES (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)</field>
                 <field name="name@es">A) RESULTADO DE EXPLOTACIÓN (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)</field>
+                <field name="name@ca_ES">A) RESULTAT D'EXPLOTACIÓ (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)</field>
                 <field name="code">es_profit_and_loss_sum_a</field>
                 <field name="hierarchy_level">0</field>
                 <field name="expression_ids">
@@ -35,6 +37,7 @@
                     <record id="es_profit_and_loss_line_1" model="account.report.line">
                         <field name="name">1. Revenue</field>
                         <field name="name@es">1. Ingreso</field>
+                        <field name="name@ca_ES">1. Ingressos</field>
                         <field name="code">es_profit_and_loss_line_1</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
