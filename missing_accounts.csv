@@ -1,28 +1,3 @@
-a110,110,Prima d'emissió,liability_non_current,False
-a112,112,Reserva legal,liability_non_current,False
-a113,113,Reserves Estatutàries,liability_non_current,False
-a114,114,Reserves Voluntàries,liability_non_current,False
-a118,118,Aportacions de socis o propietaris,liability_non_current,False
-a119,119,Altres reserves,liability_non_current,False
-a131,131,Donacions i llegats de capital,liability_non_current,False
-a141,141,Provisió per tributs,liability_non_current,True
-a143,143,Provisió per desmantellament, retirament o rehabilitació de l'immobilitzat,liability_non_current,True
-a145,145,Provisió per actuacions mediambientals,liability_non_current,True
-a160,160,Deutes a llarg termini amb entitats de crèdit vinculades,liability_non_current,False
-a161,161,Proveïdors d'immobilitzat a llarg termini, parts vinculades,liability_non_current,False
-a162,162,Creditors per arrendament financer a llarg termini, parts vinculades,liability_non_current,False
-a163,163,Altres deutes a llarg termini amb parts vinculades,liability_non_current,False
-a170,170,Deutes a llarg termini amb entitats de crèdit,liability_non_current,False
-a171,171,Deutes a llarg termini,liability_non_current,False
-a173,173,Proveïdors d'immobilitzat a llarg termini,liability_non_current,False
-a174,174,Creditors per arrendament financer a llarg termini,liability_non_current,False
-a175,175,Efectes a pagar a llarg termini,liability_non_current,False
-a177,177,Obligacions i bons,liability_non_current,False
-a179,179,Deutes representats en altres valors negociables,liability_non_current,False
-a180,180,Fiances rebudes a llarg termini,liability_non_current,False
-a181,181,Bestretes rebudes per vendes o prestacions de serveis a llarg termini,liability_non_current,False
-a185,185,Dipòsits rebuts a llarg termini,liability_non_current,False
-a194,194,Capital emès pendent d'inscripció al Registre de Societats,liability_non_current,False
 a300,300,Mercaderies A,asset_current,False
 a301,301,Mercaderies B,asset_current,False
 a310,310,Matèries primeres A,asset_current,False
