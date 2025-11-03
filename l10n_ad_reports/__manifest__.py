@@ -6,6 +6,7 @@
     'icon': '',
     'countries': ['ad'],
     'depends': [
+        'l10n_ad', 'account_reports',
     ],
     "data": [
         'data/balance_sheet_report_data.xml',
