@@ -34,6 +34,7 @@
                     </record>
                 </field>
                 <field name="children_ids">
+                    
                     <!-- INGRESSOS -->
                     <record id="es_profit_and_loss_line_1" model="account.report.line">
                         <field name="name">Revenue</field>
@@ -91,7 +92,7 @@
                             <record id="es_profit_and_loss_line_5_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">- 75</field>
+                                <field name="formula">- 74 - 75</field>
                             </record>
                         </field>
                     </record>
@@ -105,12 +106,13 @@
                         <field name="expression_ids">
                             <record id="es_profit_and_loss_line_9_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 74</field>
+                                <field name="engine">domain</field>
+                                <field name="formula" eval="[('account_id.code','=like','74%'), ('account_id.code','not like','7461%')]"/>
+                                <field name="subformula">-sum</field>
                             </record>
                         </field>
                     </record>
-                    
+
                     <!-- DESPESES -->
                     <record id="es_profit_and_loss_line_4" model="account.report.line">
                         <field name="name">4. Supplies</field>
