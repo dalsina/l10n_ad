@@ -278,118 +278,86 @@
 
             <!-- RESULTAT FINANCER -->
             <record id="es_profit_and_loss_line_sum_b" model="account.report.line">
-                <field name="name">B) FINANCIAL RESULTS (13 + 14 + 15 + 16 + 17)</field>
-                <field name="name@es">B) RESULTADO FINANCIERO (13 + 14 + 15 + 16 + 17)</field>
+                <field name="name">B) RESULTAT FINANCER</field>
                 <field name="code">es_profit_and_loss_sum_b</field>
                 <field name="hierarchy_level">0</field>
                 <field name="expression_ids">
                     <record id="es_profit_and_loss_line_sum_b_balance" model="account.report.expression">
                         <field name="label">balance</field>
                         <field name="engine">aggregation</field>
-                        <field name="formula">es_profit_and_loss_line_13.balance + es_profit_and_loss_line_14.balance + es_profit_and_loss_line_15.balance + es_profit_and_loss_line_16.balance + es_profit_and_loss_line_17.balance</field>
+                        <field name="formula">ad_pl_74.balance + ad_pl_77.balance + ad_pl_80.balance + ad_pl_83.balance + ad_pl_86.balance </field>
                     </record>
                 </field>
                 <field name="children_ids">
-                    <record id="es_profit_and_loss_line_13" model="account.report.line">
-                        <field name="name">13. Finance income</field>
-                        <field name="name@es">13. Ingresos financieros</field>
-                        <field name="code">es_profit_and_loss_line_13</field>
-                        <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_13_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">aggregation</field>
-                                <field name="formula">es_profit_and_loss_line_13a.balance + es_profit_and_loss_line_13b.balance</field>
-                            </record>
-                        </field>
-                        <field name="children_ids">
-                            <record id="es_profit_and_loss_line_13a" model="account.report.line">
-                                <field name="name">a) Allocation of subsidies, donations and legacies of financial nature</field>
-                                <field name="name@es">a) Imputación de subvenciones, donaciones y legados de carácter financiero</field>
-                                <field name="code">es_profit_and_loss_line_13a</field>
-                                <field name="groupby">account_id</field>
-                                <field name="foldable" eval="True"/>
-                                <field name="expression_ids">
-                                    <record id="es_profit_and_loss_line_13a_balance" model="account.report.expression">
-                                        <field name="label">balance</field>
-                                        <field name="engine">account_codes</field>
-                                        <field name="formula">-7461 - 72 - 84 - 94</field>
-                                    </record>
-                                </field>
-                            </record>
-                            <record id="es_profit_and_loss_line_13b" model="account.report.line">
-                                <field name="name">b) Other finance expenses</field>
-                                <field name="name@es">b) Otros ingresos financieros</field>
-                                <field name="code">es_profit_and_loss_line_13b</field>
-                                <field name="groupby">account_id</field>
-                                <field name="foldable" eval="True"/>
-                                <field name="expression_ids">
-                                    <record id="es_profit_and_loss_line_13b_balance" model="account.report.expression">
-                                        <field name="label">balance</field>
-                                        <field name="engine">account_codes</field>
-                                        <field name="formula">-767 - 761 - 760 - 762 - 769</field>
-                                    </record>
-                                </field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="es_profit_and_loss_line_14" model="account.report.line">
-                        <field name="name">14. Finance expenses</field>
-                        <field name="name@es">14. Gastos financieros</field>
-                        <field name="code">es_profit_and_loss_line_14</field>
+                    <record id="ad_pl_74" model="account.report.line">
+                        <field name="name">Ingressos financers</field>
+                        <field name="code">ad_pl_74</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_14_balance" model="account.report.expression">
+                            <record id="ad_pl_74_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">-661 - 669 - 662 - 660 - 664 - 665</field>
+                                <field name="formula">- 760 - 761 - 762 - 769</field>
                             </record>
                         </field>
                     </record>
-                    <record id="es_profit_and_loss_line_15" model="account.report.line">
-                        <field name="name">15. Variation of fair value of financial instruments</field>
-                        <field name="name@es">15. Variación de valor razonable en instrumentos financieros</field>
-                        <field name="code">es_profit_and_loss_line_15</field>
+                    <record id="ad_pl_77" model="account.report.line">
+                        <field name="name">Despeses financeres</field>
+                        <field name="code">ad_pl_77</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_15_balance" model="account.report.expression">
+                            <record id="ad_pl_77_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">-80 - 763 - 90 - 663</field>
+                                <field name="formula">- 660 - 661 - 662 - 664 - 665 - 669</field>
                             </record>
                         </field>
                     </record>
-                    <record id="es_profit_and_loss_line_16" model="account.report.line">
-                        <field name="name">16. Exchange gains/losses</field>
-                        <field name="name@es">16. Diferencias de cambio</field>
-                        <field name="code">es_profit_and_loss_line_16</field>
+                    <record id="ad_pl_80" model="account.report.line">
+                        <field name="name">Variació de valor raonable en instruments financers de negociació</field>
+                        <field name="code">ad_pl_80</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_16_balance" model="account.report.expression">
+                            <record id="ad_pl_80_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">-82 - 768 - 92 - 668</field>
+                                <field name="formula">- 663 - 763</field>
                             </record>
                         </field>
                     </record>
-                    <record id="es_profit_and_loss_line_17" model="account.report.line">
-                        <field name="name">17. Impairment and gains/losses on disposal of financial instruments</field>
-                        <field name="name@es">17. Deterioro y resultado por enajenaciones de instrumentos financieros.</field>
-                        <field name="code">es_profit_and_loss_line_17</field>
+                    <record id="ad_pl_83" model="account.report.line">
+                        <field name="name">Difrencies de canvi</field>
+                        <field name="code">ad_pl_83</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_17_balance" model="account.report.expression">
+                            <record id="ad_pl_83_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">-89 - 667 - 992 - 692 - 797 - 766 - 698 - 993 - 994 - 773 - 666 - 697 - 796 - 675 - 799 - 798 - 91 - 696 - 775 - 699 - 673 - 991 - 81</field>
+                                <field name="formula">- 668 - 768</field>
+                            </record>
+                        </field>
+                    </record>
+                    <record id="ad_pl_86" model="account.report.line">
+                        <field name="name">Deteriorament i resultats per venda o baixa d'actius financers</field>
+                        <field name="code">ad_pl_86</field>
+                        <field name="groupby">account_id</field>
+                        <field name="foldable" eval="True"/>
+                        <field name="expression_ids">
+                            <record id="ad_pl_86_balance" model="account.report.expression">
+                                <field name="label">balance</field>
+                                <field name="engine">account_codes</field>
+                                <field name="formula">- 666 - 667 - 673 - 675 - 696 - 697 - 698 - 699 - 766 - 773 - 775 - 796 - 797 - 798 - 799</field>
                             </record>
                         </field>
                     </record>
                 </field>
             </record>
+
+            <!-- RESULTAT ABANS D'IMPOSTOS -->
             <record id="es_profit_and_loss_line_sum_c" model="account.report.line">
                 <field name="name">C) PROFIT/LOSS BEFORE INCOME TAX (A + B)</field>
                 <field name="name@es">C) RESULTADO ANTES DE IMPUESTOS (A + B)</field>
