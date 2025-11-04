@@ -21,9 +21,9 @@
         </field>
         <field name="line_ids">
             <record id="es_profit_and_loss_line_sum_a" model="account.report.line">
-                <field name="name">A) RESULTS FROM OPERATING ACTIVITIES (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)</field>
-                <field name="name@es">A) RESULTADO DE EXPLOTACIÓN (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)</field>
-                <field name="name@ca_ES">A) RESULTAT D'EXPLOTACIÓ (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)</field>
+                <field name="name">A) RESULTS FROM OPERATING ACTIVITIES</field>
+                <field name="name@es">A) RESULTADO DE EXPLOTACIÓN</field>
+                <field name="name@ca_ES">A) RESULTAT D'EXPLOTACIÓ</field>
                 <field name="code">es_profit_and_loss_sum_a</field>
                 <field name="hierarchy_level">0</field>
                 <field name="expression_ids">
@@ -34,10 +34,11 @@
                     </record>
                 </field>
                 <field name="children_ids">
+                    <!-- INGRESSOS -->
                     <record id="es_profit_and_loss_line_1" model="account.report.line">
-                        <field name="name">1. Revenue</field>
-                        <field name="name@es">1. Ingreso</field>
-                        <field name="name@ca_ES">1. Ingressos</field>
+                        <field name="name">Revenue</field>
+                        <field name="name@es">Ingreso</field>
+                        <field name="name@ca_ES">Import net de la xifra de negoci</field>
                         <field name="code">es_profit_and_loss_line_1</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
@@ -50,8 +51,9 @@
                         </field>
                     </record>
                     <record id="es_profit_and_loss_line_2" model="account.report.line">
-                        <field name="name">2. Changes in inventories of finished goods and work in progress</field>
-                        <field name="name@es">2. Variación de existencias de productos terminados y en curso de fabricación</field>
+                        <field name="name">Changes in inventories of finished goods and work in progress</field>
+                        <field name="name@es">Variación de existencias de productos terminados y en curso de fabricación</field>
+                        <field name="name@ca_ES">Variació d'existències de productes acabats i en curs de fabricació </field>
                         <field name="code">es_profit_and_loss_line_2</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
@@ -59,13 +61,14 @@
                             <record id="es_profit_and_loss_line_2_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">-71 - 6930 - 7930</field>
+                                <field name="formula">-71 - 693 - 793</field>
                             </record>
                         </field>
                     </record>
                     <record id="es_profit_and_loss_line_3" model="account.report.line">
-                        <field name="name">3. Work carried out by the company for assets</field>
-                        <field name="name@es">3. Trabajos realizados por la empresa para su activo.</field>
+                        <field name="name">Work carried out by the company for assets</field>
+                        <field name="name@es">Trabajos realizados por la empresa para su activo.</field>
+                        <field name="name@ca_ES">Treballs realitzats per l'empresari al seu immobilitzat</field>
                         <field name="code">es_profit_and_loss_line_3</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
@@ -77,6 +80,38 @@
                             </record>
                         </field>
                     </record>
+                    <record id="es_profit_and_loss_line_5" model="account.report.line">
+                        <field name="name">Other operating income</field>
+                        <field name="name@es">Otros ingresos de explotación</field>
+                        <field name="name@ca_ES">Altres ingressos d'explotació</field>
+                        <field name="code">es_profit_and_loss_line_5</field>
+                        <field name="groupby">account_id</field>
+                        <field name="foldable" eval="True"/>
+                        <field name="expression_ids">
+                            <record id="es_profit_and_loss_line_5_balance" model="account.report.expression">
+                                <field name="label">balance</field>
+                                <field name="engine">account_codes</field>
+                                <field name="formula">- 75</field>
+                            </record>
+                        </field>
+                    </record>
+                    <record id="es_profit_and_loss_line_9" model="account.report.line">
+                        <field name="name">Non-financial and other capital grants</field>
+                        <field name="name@es">Imputación de subvenciones de inmovilizado no financiero y otras</field>
+                        <field name="name@ca_ES">Subvencions</field>
+                        <field name="code">es_profit_and_loss_line_9</field>
+                        <field name="groupby">account_id</field>
+                        <field name="foldable" eval="True"/>
+                        <field name="expression_ids">
+                            <record id="es_profit_and_loss_line_9_balance" model="account.report.expression">
+                                <field name="label">balance</field>
+                                <field name="engine">account_codes</field>
+                                <field name="formula">- 74</field>
+                            </record>
+                        </field>
+                    </record>
+                    
+                    <!-- DESPESES -->
                     <record id="es_profit_and_loss_line_4" model="account.report.line">
                         <field name="name">4. Supplies</field>
                         <field name="name@es">4. Aprovisionamientos</field>
@@ -88,20 +123,6 @@
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
                                 <field name="formula">-608 - 602 - 601 - 606 - 6931 - 61 - 600 - 7933 - 6932 - 7932 - 7931 - 607 - 6933 - 609</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="es_profit_and_loss_line_5" model="account.report.line">
-                        <field name="name">5. Other operating income</field>
-                        <field name="name@es">5. Otros ingresos de explotación</field>
-                        <field name="code">es_profit_and_loss_line_5</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_5_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">-747 - 740 - 75 - 95</field>
                             </record>
                         </field>
                     </record>
@@ -144,21 +165,6 @@
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
                                 <field name="formula">-68</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="es_profit_and_loss_line_9" model="account.report.line">
-                        <field name="name">9. Non-financial and other capital grants</field>
-                        <field name="name@es">9. Imputación de subvenciones de inmovilizado no financiero y otras</field>
-                        <field name="code">es_profit_and_loss_line_9</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_9_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">domain</field>
-                                <field name="formula" eval="[('account_id.code','=like','746%'), ('account_id.code','not like','7461%')]"/>
-                                <field name="subformula">-sum</field>
                             </record>
                         </field>
                     </record>
