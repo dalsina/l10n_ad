@@ -415,7 +415,7 @@
 
 
             <!-- RESULTAT DE L'EXERCICI -->
-            <record id="es_profit_and_loss_line_sum_d" model="account.report.line">
+            <record id="es_profit_and_loss_line_sum_e" model="account.report.line">
                 <field name="name">RESULTAT DE L'EXERCICI</field>
                 <field name="hierarchy_level">0</field>
                 <field name="code">es_profit_and_loss_sum_e</field>
