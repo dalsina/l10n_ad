@@ -420,7 +420,7 @@
                 <field name="hierarchy_level">0</field>
                 <field name="code">es_profit_and_loss_sum_e</field>
                 <field name="expression_ids">
-                    <record id="es_profit_and_loss_line_sum_d_balance" model="account.report.expression">
+                    <record id="es_profit_and_loss_line_sum_e_balance" model="account.report.expression">
                         <field name="label">balance</field>
                         <field name="engine">aggregation</field>
                         <field name="formula">es_profit_and_loss_sum_d.balance + es_profit_and_loss_line_18.balance</field>
@@ -442,6 +442,7 @@
                     </record>
                 </field>
             </record>
+
         </field>
     </record>
 </odoo>
