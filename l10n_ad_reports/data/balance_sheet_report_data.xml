@@ -26,6 +26,8 @@
                 <field name="horizontal_split_side">left</field>
                 <field name="hierarchy_level">0</field>
                 <field name="children_ids">
+
+                    <!-- ACTIU NO CORRENT -->
                     <record id="balance_pymes_line_11000" model="account.report.line">
                         <field name="name">ACTIU NO CORRENT</field>
                         <field name="code">l10n_es_pymes_line_11000</field>
@@ -61,6 +63,8 @@
                             </record>
                         </field>
                     </record>
+
+                    <!-- ACTIU CORRENT -->
                     <record id="balance_pymes_line_12000" model="account.report.line">
                         <field name="name">ACTIU CORRENT</field>
                         <field name="code">l10n_es_pymes_line_12000</field>
@@ -121,6 +125,8 @@
                 <field name="horizontal_split_side">right</field>
                 <field name="hierarchy_level">0</field>
                 <field name="children_ids">
+
+                    <!-- PATRIMONI NET -->
                     <record id="balance_pymes_line_20000" model="account.report.line">
                         <field name="name">PATRIMONI NET</field>
                         <field name="code">l10n_es_pymes_line_20000</field>
@@ -167,7 +173,7 @@
                                         <field name="foldable" eval="True"/>
                                         <field name="account_codes_formula">- 120 - 121</field>
                                     </record>
-                                    <record id="balance_pymes_line_21700" model="account.report.line">
+                                    <!-- <record id="balance_pymes_line_21700" model="account.report.line">
                                         <field name="name">Resultat de l'exercici</field>
                                         <field name="code">l10n_es_pymes_line_21700</field>
                                         <field name="action_id" ref="account_reports.action_account_report_pl"/>
@@ -180,7 +186,7 @@
                                                 <field name="date_scope">from_fiscalyear</field>
                                             </record>
                                         </field>
-                                    </record>
+                                    </record> -->
                                     <record id="balance_pymes_line_21800" model="account.report.line">
                                         <field name="name">Dividend a compte</field>
                                         <field name="code">l10n_es_pymes_line_21800</field>
@@ -192,6 +198,8 @@
                             </record>
                         </field>
                     </record>
+
+                    <!-- PASSIU NO CORRENT -->
                     <record id="balance_pymes_line_31000" model="account.report.line">
                         <field name="name">PASSIU NO CORRENT</field>
                         <field name="code">l10n_es_pymes_line_31000</field>
@@ -227,6 +235,8 @@
                             </record>
                         </field>
                     </record>
+
+                    <!-- PASSIU CORRENT -->
                     <record id="balance_pymes_line_32000" model="account.report.line">
                         <field name="name">PASSIU CORRENT</field>
                         <field name="code">l10n_es_pymes_line_32000</field>
