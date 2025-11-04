@@ -357,10 +357,9 @@
                 </field>
             </record>
 
-            <!-- RESULTAT ABANS D'IMPOSTOS -->
+            <!-- RESULTAT DE LES OPERACIONS -->
             <record id="es_profit_and_loss_line_sum_c" model="account.report.line">
-                <field name="name">C) PROFIT/LOSS BEFORE INCOME TAX (A + B)</field>
-                <field name="name@es">C) RESULTADO ANTES DE IMPUESTOS (A + B)</field>
+                <field name="name">RESULTAT DE LES OPERACIONS</field>
                 <field name="code">es_profit_and_loss_sum_c</field>
                 <field name="hierarchy_level">0</field>
                 <field name="expression_ids">
@@ -371,22 +370,65 @@
                     </record>
                 </field>
             </record>
+
+            <!-- RESULTAT ABANS D'IMPOSTOS -->
             <record id="es_profit_and_loss_line_sum_d" model="account.report.line">
-                <field name="name">D) PROFIT/LOSS FOR THE PERIOD (C + 18)</field>
-                <field name="name@es">D) RESULTADO DEL EJERCICIO (C + 18)</field>
+                <field name="name">RESULTAT ABANS D'IMPOSTOS</field>
                 <field name="hierarchy_level">0</field>
                 <field name="code">es_profit_and_loss_sum_d</field>
                 <field name="expression_ids">
                     <record id="es_profit_and_loss_line_sum_d_balance" model="account.report.expression">
                         <field name="label">balance</field>
                         <field name="engine">aggregation</field>
-                        <field name="formula">es_profit_and_loss_sum_c.balance + es_profit_and_loss_line_18.balance</field>
+                        <field name="formula">es_profit_and_loss_sum_c.balance + ad_pl_98.balance + ad_pl_101.balance</field>
+                    </record>
+                </field>
+                <field name="children_ids">
+                    <record id="ad_pl_98" model="account.report.line">
+                        <field name="name">Altres ingresos no recurrents</field>
+                        <field name="code">ad_pl_98</field>
+                        <field name="groupby">account_id</field>
+                        <field name="foldable" eval="True"/>
+                        <field name="expression_ids">
+                            <record id="ad_pl_98_balance" model="account.report.expression">
+                                <field name="label">balance</field>
+                                <field name="engine">account_codes</field>
+                                <field name="formula">- 778</field>
+                            </record>
+                        </field>
+                    </record>
+                    <record id="ad_pl_101" model="account.report.line">
+                        <field name="name">Altres despeses no recurrents</field>
+                        <field name="code">ad_pl_101</field>
+                        <field name="groupby">account_id</field>
+                        <field name="foldable" eval="True"/>
+                        <field name="expression_ids">
+                            <record id="ad_pl_101_balance" model="account.report.expression">
+                                <field name="label">balance</field>
+                                <field name="engine">account_codes</field>
+                                <field name="formula">- 678</field>
+                            </record>
+                        </field>
+                    </record>
+                </field>
+            </record>
+
+
+            <!-- RESULTAT DE L'EXERCICI -->
+            <record id="es_profit_and_loss_line_sum_d" model="account.report.line">
+                <field name="name">RESULTAT DE L'EXERCICI</field>
+                <field name="hierarchy_level">0</field>
+                <field name="code">es_profit_and_loss_sum_e</field>
+                <field name="expression_ids">
+                    <record id="es_profit_and_loss_line_sum_d_balance" model="account.report.expression">
+                        <field name="label">balance</field>
+                        <field name="engine">aggregation</field>
+                        <field name="formula">es_profit_and_loss_sum_d.balance + es_profit_and_loss_line_18.balance</field>
                     </record>
                 </field>
                 <field name="children_ids">
                     <record id="es_profit_and_loss_line_18" model="account.report.line">
-                        <field name="name">18. Income tax expense</field>
-                        <field name="name@es">18. Impuestos sobre beneficios.</field>
+                        <field name="name">Impost sobre beneficis</field>
                         <field name="code">es_profit_and_loss_line_18</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
@@ -394,7 +436,7 @@
                             <record id="es_profit_and_loss_line_18_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">-638 - 633 - 6301 - 83 - 6300</field>
+                                <field name="formula">- 630</field>
                             </record>
                         </field>
                     </record>
