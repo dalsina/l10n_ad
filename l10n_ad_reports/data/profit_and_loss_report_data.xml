@@ -423,17 +423,17 @@
                     <record id="ad_pl_year_line_sum_balance" model="account.report.expression">
                         <field name="label">balance</field>
                         <field name="engine">aggregation</field>
-                        <field name="formula">es_profit_and_loss_sum_d.balance</field>
+                        <field name="formula">es_profit_and_loss_sum_d.balance + ad_pl_107.balance</field>
                     </record>
                 </field>
                 <field name="children_ids">
-                    <record id="es_profit_and_loss_line_18" model="account.report.line">
+                    <record id="ad_pl_107" model="account.report.line">
                         <field name="name">Impost sobre beneficis</field>
-                        <field name="code">es_profit_and_loss_line_18</field>
+                        <field name="code">ad_pl_107</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_18_balance" model="account.report.expression">
+                            <record id="ad_pl_107_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
                                 <field name="formula">- 630</field>
