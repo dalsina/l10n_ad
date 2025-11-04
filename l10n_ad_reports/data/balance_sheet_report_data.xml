@@ -17,6 +17,8 @@
             </record>
         </field>
         <field name="line_ids">
+
+            <!-- ACTIU -->
             <record id="balance_pymes_line_10000" model="account.report.line">
                 <field name="name">TOTAL ACTIU</field>
                 <field name="code">l10n_es_pymes_line_10000</field>
@@ -81,7 +83,7 @@
                             <record id="balance_pymes_line_12300" model="account.report.line">
                                 <field name="name">Crèdits i comptes per cobrar a curt termini</field>
                                 <field name="code">l10n_es_pymes_line_12300</field>
-                                <field name="groupby">account_id</field>
+                                <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
                                 <field name="account_codes_formula">43 + 44 + 460 + 470 + 490 + 493 + 472 + 473 + 474</field>
                             </record>
@@ -110,6 +112,8 @@
                     </record>
                 </field>
             </record>
+
+            <!-- PATRIMONI NET I PASSIU -->
             <record id="balance_pymes_line_30000" model="account.report.line">
                 <field name="name">TOTAL PATRIMONI NET I PASSIU</field>
                 <field name="code">l10n_es_pymes_line_30000</field>
@@ -182,7 +186,7 @@
                                         <field name="code">l10n_es_pymes_line_21800</field>
                                         <field name="groupby">account_id</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">-557</field>
+                                        <field name="account_codes_formula">- 557</field>
                                     </record>
                                 </field>
                             </record>
@@ -261,7 +265,7 @@
                                 <field name="code">l10n_es_pymes_line_32500</field>
                                 <field name="groupby">account_id</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-40 - 41 - 438 - 465 - 466</field>
+                                <field name="account_codes_formula">- 40 - 41 - 438 - 465 - 466</field>
                             </record>
                             <record id="balance_pymes_line_32600" model="account.report.line">
                                 <field name="name">Ajustaments per periodificació</field>
