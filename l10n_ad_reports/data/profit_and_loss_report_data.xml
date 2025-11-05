@@ -108,13 +108,12 @@
                     <record id="ad_despeses_explotacio_balance" model="account.report.expression">
                         <field name="label">balance</field>
                         <field name="engine">aggregation</field>
-                        <field name="formula">ad_despeses_explotacio_consum.balance + es_profit_and_loss_line_6.balance + es_profit_and_loss_line_8.balance
-                            + ad_pl_38.balance + ad_pl_40.balance + ad_pl_47.balance + ad_pl_53.balance + ad_pl_56.balance + ad_pl_59.balance + ad_pl_62.balance + ad_pl_65.balance + ad_pl_se.balance
+                        <field name="formula">ad_despeses_explotacio_consum.balance + ad_despeses_explotacio_personal.balance
+                            + ad_despeses_explotacio_amortitzacio.balance + ad_pl_47.balance + ad_despeses_explotacio_altres.balance
                         </field>
                     </record>
                 </field>
                 <field name="children_ids">
-                    
                     <record id="ad_despeses_explotacio_consum" model="account.report.line">
                         <field name="name">Consum de mercaderies, matèries primeres i altres materials</field>
                         <field name="code">ad_despeses_explotacio_consum</field>
@@ -154,60 +153,76 @@
                                 </field>
                             </record>
                         </field>
+                    </record>
+
+                    <record id="ad_despeses_explotacio_personal" model="account.report.line">
+                        <field name="name">Despeses de personal</field>
+                        <field name="code">ad_despeses_explotacio_personal</field>
+                        <field name="hierarchy_level">2</field>
+                        <field name="expression_ids">
+                            <record id="ad_despeses_explotacio_personal_balance" model="account.report.expression">
+                                <field name="label">balance</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">ad_pl_35.balance + ad_pl_38.balance + ad_pl_40.balance</field>
+                            </record>
+                        </field>
+                        <field name="children_ids">
+                            <record id="ad_pl_35" model="account.report.line">
+                                <field name="name">Sous i salaris i assimilats</field>
+                                <field name="code">ad_pl_35</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_35_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 640 - 644 - 641</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_38" model="account.report.line">
+                                <field name="name">Càrregues socials</field>
+                                <field name="code">ad_pl_38</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_38_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 642</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_40" model="account.report.line">
+                                <field name="name">Altres despeses de personal</field>
+                                <field name="code">ad_pl_40</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_40_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 649 - 643</field>
+                                    </record>
+                                </field>
+                            </record>
+                        </field>
                     </record> 
 
-                    <record id="es_profit_and_loss_line_6" model="account.report.line">
-                        <field name="name">Sous i salaris i assimilats</field>
-                        <field name="code">es_profit_and_loss_line_6</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_6_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 640 - 644 - 641</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="ad_pl_38" model="account.report.line">
-                        <field name="name">Càrregues socials</field>
-                        <field name="code">ad_pl_38</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_38_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 642</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="ad_pl_40" model="account.report.line">
-                        <field name="name">Altres despeses de personal</field>
-                        <field name="code">ad_pl_40</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_40_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 649 - 643</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="es_profit_and_loss_line_8" model="account.report.line">
+                    <record id="ad_despeses_explotacio_amortitzacio" model="account.report.line">
                         <field name="name">Amortització, deteriorament i resultats per venda o baixa de l'immobilitzat intangible i de l'immobilitzat tangible</field>
-                        <field name="code">es_profit_and_loss_line_8</field>
+                        <field name="code">ad_despeses_explotacio_amortitzacio</field>
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_8_balance" model="account.report.expression">
+                            <record id="ad_despeses_explotacio_amortitzacio_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
                                 <field name="formula">- 68 - 67 - 69 - 79 - 77</field>
                             </record>
                         </field>
                     </record>
+                    
                     <record id="ad_pl_47" model="account.report.line">
                         <field name="name">Deteriorament del circulant</field>
                         <field name="code">ad_pl_47</field>
@@ -221,84 +236,99 @@
                             </record>
                         </field>
                     </record>
-                    <record id="ad_pl_53" model="account.report.line">
-                        <field name="name">Arrendaments i cànons</field>
-                        <field name="code">ad_pl_53</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
+
+                    <record id="ad_despeses_explotacio_altres" model="account.report.line">
+                        <field name="name">Despeses de personal</field>
+                        <field name="code">ad_despeses_explotacio_altres</field>
+                        <field name="hierarchy_level">2</field>
                         <field name="expression_ids">
-                            <record id="ad_pl_53_balance" model="account.report.expression">
+                            <record id="ad_despeses_explotacio_altres_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 621</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">ad_pl_53.balance + ad_pl_56.balance + ad_pl_59.balance + ad_pl_62.balance + ad_pl_65.balance + ad_pl_se.balance</field>
                             </record>
                         </field>
-                    </record>
-                    <record id="ad_pl_56" model="account.report.line">
-                        <field name="name">Reparacions i conservació</field>
-                        <field name="code">ad_pl_56</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_56_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 622</field>
+                        <field name="children_ids">
+                            <record id="ad_pl_53" model="account.report.line">
+                                <field name="name">Arrendaments i cànons</field>
+                                <field name="code">ad_pl_53</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_53_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 621</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_56" model="account.report.line">
+                                <field name="name">Reparacions i conservació</field>
+                                <field name="code">ad_pl_56</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_56_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 622</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_59" model="account.report.line">
+                                <field name="name">Serveis professionals independents</field>
+                                <field name="code">ad_pl_59</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_59_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 623</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_62" model="account.report.line">
+                                <field name="name">Subministraments</field>
+                                <field name="code">ad_pl_62</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_62_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 628</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_65" model="account.report.line">
+                                <field name="name">Tributs</field>
+                                <field name="code">ad_pl_65</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_65_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 631</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_se" model="account.report.line">
+                                <field name="name">Altres serveis exteriors</field>
+                                <field name="code">ad_pl_se</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_se_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 625 - 626 - 627 - 629 - 624</field>
+                                    </record>
+                                </field>
                             </record>
                         </field>
-                    </record>
-                    <record id="ad_pl_59" model="account.report.line">
-                        <field name="name">Serveis professionals independents</field>
-                        <field name="code">ad_pl_59</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_59_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 623</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="ad_pl_62" model="account.report.line">
-                        <field name="name">Subministraments</field>
-                        <field name="code">ad_pl_62</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_62_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 628</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="ad_pl_65" model="account.report.line">
-                        <field name="name">Tributs</field>
-                        <field name="code">ad_pl_65</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_65_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 631</field>
-                            </record>
-                        </field>
-                    </record>
-                    <record id="ad_pl_se" model="account.report.line">
-                        <field name="name">Altres serveis exteriors</field>
-                        <field name="code">ad_pl_se</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="ad_pl_se_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 625 - 626 - 627 - 629 - 624</field>
-                            </record>
-                        </field>
-                    </record>
+                    </record> 
                 </field>
             </record>
 
