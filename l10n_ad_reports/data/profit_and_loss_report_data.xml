@@ -520,7 +520,7 @@
                 <field name="expression_ids">
                     <record id="ad_impost_beneficis_balance" model="account.report.expression">
                         <field name="label">balance</field>
-                        <field name="engine">aggregation</field>
+                        <field name="engine">account_codes</field>
                         <field name="formula">- 630</field>
                     </record>
                 </field>
