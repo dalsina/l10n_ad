@@ -108,38 +108,54 @@
                     <record id="ad_despeses_explotacio_balance" model="account.report.expression">
                         <field name="label">balance</field>
                         <field name="engine">aggregation</field>
-                        <field name="formula">es_profit_and_loss_line_4.balance + es_profit_and_loss_line_10.balance + es_profit_and_loss_line_6.balance + es_profit_and_loss_line_8.balance
+                        <field name="formula">ad_despeses_explotacio_consum.balance + es_profit_and_loss_line_6.balance + es_profit_and_loss_line_8.balance
                             + ad_pl_38.balance + ad_pl_40.balance + ad_pl_47.balance + ad_pl_53.balance + ad_pl_56.balance + ad_pl_59.balance + ad_pl_62.balance + ad_pl_65.balance + ad_pl_se.balance
                         </field>
                     </record>
                 </field>
                 <field name="children_ids">
-                    <record id="es_profit_and_loss_line_4" model="account.report.line">
-                        <field name="name">Consum de mercaderies</field>
-                        <field name="code">es_profit_and_loss_line_4</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
+                    
+                    <record id="ad_despeses_explotacio_consum" model="account.report.line">
+                        <field name="name">Consum de mercaderies, matèries primeres i altres materials</field>
+                        <field name="code">ad_despeses_explotacio_consum</field>
+                        <field name="hierarchy_level">2</field>
                         <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_4_balance" model="account.report.expression">
+                            <record id="ad_despeses_explotacio_consum_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 600 - 610</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">es_profit_and_loss_line_4.balance + es_profit_and_loss_line_10.balance</field>
                             </record>
                         </field>
-                    </record>
-                    <record id="es_profit_and_loss_line_10" model="account.report.line">
-                        <field name="name">Consum de materies primes i altres aprovisionaments</field>
-                        <field name="code">es_profit_and_loss_line_10</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
-                        <field name="expression_ids">
-                            <record id="es_profit_and_loss_line_10_balance" model="account.report.expression">
-                                <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 601 - 602 - 606 - 607 -608 - 609 - 611 - 612</field>
+                        <field name="children_ids">
+                            <record id="es_profit_and_loss_line_4" model="account.report.line">
+                                <field name="name">Consum de mercaderies</field>
+                                <field name="code">es_profit_and_loss_line_4</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="es_profit_and_loss_line_4_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 600 - 610</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="es_profit_and_loss_line_10" model="account.report.line">
+                                <field name="name">Consum de materies primes i altres aprovisionaments</field>
+                                <field name="code">es_profit_and_loss_line_10</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="es_profit_and_loss_line_10_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 601 - 602 - 606 - 607 -608 - 609 - 611 - 612</field>
+                                    </record>
+                                </field>
                             </record>
                         </field>
-                    </record>
+                    </record> 
+
                     <record id="es_profit_and_loss_line_6" model="account.report.line">
                         <field name="name">Sous i salaris i assimilats</field>
                         <field name="code">es_profit_and_loss_line_6</field>
