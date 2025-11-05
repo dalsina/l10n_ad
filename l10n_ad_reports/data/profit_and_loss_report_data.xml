@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo auto_sequence="1">
     <record id="financial_report_es_profit_and_loss" model="account.report">
-        <field name="name">Pèrdues i Guanys</field>
+        <field name="name">Pèrdues i Guanys Abreujat</field>
         <field name="root_report_id" ref="account_reports.profit_and_loss"/>
         <field name="filter_date_range" eval="True"/>
         <field name="filter_analytic_groupby" eval="True"/>
