@@ -218,7 +218,7 @@
                             <record id="ad_despeses_explotacio_amortitzacio_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
-                                <field name="formula">- 68 - 67 - 69 - 79 - 77</field>
+                                <field name="formula">- 68 - 67 - 690 - 691 - 692 - 693 - 79 - 77</field>
                             </record>
                         </field>
                     </record>

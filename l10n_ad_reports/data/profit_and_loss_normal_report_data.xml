@@ -439,26 +439,80 @@
                     <record id="ad_pl_n_22" model="account.report.line">
                         <field name="name">Ingressos financers</field>
                         <field name="code">ad_pl_n_22</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
+                        <field name="hierarchy_level">2</field>
                         <field name="expression_ids">
                             <record id="ad_pl_n_22_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 760 - 761 - 762 - 769</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">ad_pl_n_22_1.balance + ad_pl_n_22_2.balance</field>
+                            </record>
+                        </field>
+                        <field name="children_ids">
+                            <record id="ad_pl_n_22_1" model="account.report.line">
+                                <field name="name">De participacions en instruments de patrimoni</field>
+                                <field name="code">ad_pl_n_22_1</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_22_1_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 760</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_n_22_2" model="account.report.line">
+                                <field name="name">Altres ingressos financers</field>
+                                <field name="code">ad_pl_n_22_2</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_22_2_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 761 - 762 - 769</field>
+                                    </record>
+                                </field>
                             </record>
                         </field>
                     </record>
                     <record id="ad_pl_n_23" model="account.report.line">
                         <field name="name">Despeses financeres</field>
                         <field name="code">ad_pl_n_23</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
+                        <field name="hierarchy_level">2</field>
                         <field name="expression_ids">
                             <record id="ad_pl_n_23_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 660 - 661 - 662 - 664 - 665 - 669</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">ad_pl_n_23_1.balance + ad_pl_n_23_2.balance</field>
+                            </record>
+                        </field>
+                        <field name="children_ids">
+                            <record id="ad_pl_n_23_1" model="account.report.line">
+                                <field name="name">Per deutes amb parts vinculades</field>
+                                <field name="code">ad_pl_n_23_1</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_23_1_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 660 - 661 - 664</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_n_23_2" model="account.report.line">
+                                <field name="name">Altres deutes</field>
+                                <field name="code">ad_pl_n_23_2</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_23_2_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 662 - 665 - 669</field>
+                                    </record>
+                                </field>
                             </record>
                         </field>
                     </record>
@@ -491,13 +545,40 @@
                     <record id="ad_pl_n_26" model="account.report.line">
                         <field name="name">Deteriorament i resultats per venda o baixa d'actius financers</field>
                         <field name="code">ad_pl_n_26</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
+                        <field name="hierarchy_level">2</field>
                         <field name="expression_ids">
                             <record id="ad_pl_n_26_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 666 - 667 - 673 - 675 - 696 - 697 - 698 - 699 - 766 - 773 - 775 - 796 - 797 - 798 - 799</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">ad_pl_n_26_1.balance + ad_pl_n_26_2.balance</field>
+                            </record>
+                        </field>
+                        <field name="children_ids">
+                            <record id="ad_pl_n_26_1" model="account.report.line">
+                                <field name="name">Deteriorament</field>
+                                <field name="code">ad_pl_n_26_1</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_26_1_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 696 - 796 - 697 - 797 - 698 - 798 - 699 - 799</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_n_26_2" model="account.report.line">
+                                <field name="name">Resultats per venda o baixa</field>
+                                <field name="code">ad_pl_n_26_2</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_26_2_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 666 - 766 - 667 - 773 - 675 - 775</field>
+                                    </record>
+                                </field>
                             </record>
                         </field>
                     </record>
