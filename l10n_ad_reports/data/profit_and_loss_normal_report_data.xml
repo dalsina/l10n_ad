@@ -88,7 +88,7 @@
                         <field name="groupby">account_id</field>
                         <field name="foldable" eval="True"/>
                         <field name="expression_ids">
-                            <record id="ad_pl_n_4_balance" model="account.report.expression">
+                            <record id="ad_pl_n_5_balance" model="account.report.expression">
                                 <field name="label">balance</field>
                                 <field name="engine">account_codes</field>
                                 <field name="formula">- 740 - 746 - 747</field>
