@@ -275,7 +275,7 @@
                                 <field name="code">l10n_es_pymes_line_32500</field>
                                 <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">- 40 - 41 - 438 - 465 - 466</field>
+                                <field name="account_codes_formula">- 400 - 401 - 405 - 406 - 403 - 404 - 410 - 411 - 438 - 465 - 466</field>
                             </record>
                             <record id="balance_pymes_line_32600" model="account.report.line">
                                 <field name="name">Ajustaments per periodificació</field>

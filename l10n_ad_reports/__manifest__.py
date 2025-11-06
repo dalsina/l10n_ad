@@ -11,6 +11,7 @@
     "data": [
         'data/balance_sheet_report_data.xml',
         'data/profit_and_loss_report_data.xml',
+        'data/profit_and_loss_normal_report_data.xml',
     ],
     'auto_install': ['l10n_ad', 'account_reports'],
     'installable': True,
