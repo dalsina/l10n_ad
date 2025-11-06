@@ -263,13 +263,53 @@
                     <record id="ad_pl_n_9" model="account.report.line">
                         <field name="name">Deteriorament del circulant</field>
                         <field name="code">ad_pl_n_9</field>
-                        <field name="groupby">account_id</field>
-                        <field name="foldable" eval="True"/>
+                        <field name="hierarchy_level">2</field>
                         <field name="expression_ids">
                             <record id="ad_pl_n_9_balance" model="account.report.expression">
                                 <field name="label">balance</field>
-                                <field name="engine">account_codes</field>
-                                <field name="formula">- 65 - 794 - 795 - 694</field>
+                                <field name="engine">aggregation</field>
+                                <field name="formula">ad_pl_n_9_1.balance + ad_pl_n_9_2.balance + ad_pl_n_9_3.balance</field>
+                            </record>
+                        </field>
+                        <field name="children_ids">
+                            <record id="ad_pl_n_9_1" model="account.report.line">
+                                <field name="name">Existències</field>
+                                <field name="code">ad_pl_n_9_1</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_9_1_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 693 - 793</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_n_9_2" model="account.report.line">
+                                <field name="name">Crèdits i comptes a cobrar</field>
+                                <field name="code">ad_pl_n_9_2</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_9_2_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 650 - 694 - 695 - 794 - 795</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="ad_pl_n_9_3" model="account.report.line">
+                                <field name="name">Crèdits i comptes a cobrar</field>
+                                <field name="code">ad_pl_n_9_3</field>
+                                <field name="groupby">account_id</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="expression_ids">
+                                    <record id="ad_pl_n_9_3_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">account_codes</field>
+                                        <field name="formula">- 659</field>
+                                    </record>
+                                </field>
                             </record>
                         </field>
                     </record>
@@ -360,7 +400,7 @@
                                     <record id="ad_pl_n_21_balance" model="account.report.expression">
                                         <field name="label">balance</field>
                                         <field name="engine">account_codes</field>
-                                        <field name="formula">- 625 - 626 - 627 - 629 - 624</field>
+                                        <field name="formula">- 620 - 624 - 625 - 626 - 627 - 629</field>
                                     </record>
                                 </field>
                             </record>
