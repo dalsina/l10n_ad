@@ -11,8 +11,7 @@
         <field name="allow_account_audit_status_on_lines" eval="True"/>
         <field name="column_ids">
             <record id="financial_report_balance_sheet_normal_column" model="account.report.column">
-                <field name="name">Balance</field>
-                <field name="name@es">Saldo</field>
+                <field name="name">Saldo</field>
                 <field name="expression_label">balance</field>
             </record>
         </field>
@@ -36,28 +35,49 @@
                             <record id="balance_ad_line_11100" model="account.report.line">
                                 <field name="name">Immobilitzat intangible</field>
                                 <field name="code">l10n_ad_pymes_line_11100</field>
-                                <!-- <field name="groupby">account_id</field> -->
-                                <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">20 + 280 + 290</field>
+                                <field name="aggregation_formula">l10n_ad_pymes_line_11110.balance + l10n_ad_pymes_line_11120.balance + l10n_ad_pymes_line_11130.balance + l10n_ad_pymes_line_11140.balance</field>
+                                <field name="children_ids">
+                                    <record id="balance_ad_line_11110" model="account.report.line">
+                                        <field name="name">Despeses d'establiment</field>
+                                        <field name="code">l10n_ad_pymes_line_11110</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">200</field>
+                                    </record>
+                                    <record id="balance_ad_line_11120" model="account.report.line">
+                                        <field name="name">Despeses d'investigació i desenvolupament</field>
+                                        <field name="code">l10n_ad_pymes_line_11120</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">201 + 202</field>
+                                    </record>
+                                    <record id="balance_ad_line_11130" model="account.report.line">
+                                        <field name="name">Fons de comerç</field>
+                                        <field name="code">l10n_ad_pymes_line_11130</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">205</field>
+                                    </record>
+                                    <record id="balance_ad_line_11140" model="account.report.line">
+                                        <field name="name">Altres actius intangibles</field>
+                                        <field name="code">l10n_ad_pymes_line_11140</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">203 + 204 + 206 + 207 + 208 + 209 + 280 + 290</field>
+                                    </record>
+                                </field>
                             </record>
                             <record id="balance_ad_line_11200" model="account.report.line">
                                 <field name="name">Immobilitzat tangible</field>
                                 <field name="code">l10n_ad_pymes_line_11200</field>
-                                <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
                                 <field name="account_codes_formula">21 + 23 + 281 + 291</field>
                             </record>
                             <record id="balance_ad_line_11300" model="account.report.line">
                                 <field name="name">Inversions immobiliàries</field>
                                 <field name="code">l10n_ad_pymes_line_11300</field>
-                                <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
                                 <field name="account_codes_formula">22 + 282 + 292</field>
                             </record>
                             <record id="balance_ad_line_11400" model="account.report.line">
                                 <field name="name">Immobilitzat financer</field>
                                 <field name="code">l10n_ad_pymes_line_11400</field>
-                                <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
                                 <field name="account_codes_formula">24 + 25 + 293 + 294 + 295 + 296 + 297 + 298 + 260 + 265</field>
                             </record>
@@ -138,8 +158,7 @@
                                 <field name="aggregation_formula">l10n_ad_pymes_line_21100.balance + l10n_ad_pymes_line_21200.balance + l10n_ad_pymes_line_21300.balance + l10n_ad_pymes_line_21400.balance + l10n_ad_pymes_line_21500.balance + l10n_ad_pymes_line_21700.balance + l10n_ad_pymes_line_21800.balance</field>
                                 <field name="children_ids">
                                     <record id="balance_ad_line_21100" model="account.report.line">
-                                        <field name="name">I. Capital</field>
-                                        <field name="name@es">I. Capital</field>
+                                        <field name="name">Capital</field>
                                         <field name="code">l10n_ad_pymes_line_21100</field>
                                         <!-- <field name="groupby">account_id</field> -->
                                         <field name="foldable" eval="True"/>

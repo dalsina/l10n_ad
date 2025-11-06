@@ -138,8 +138,7 @@
                                 <field name="aggregation_formula">l10n_es_pymes_line_21100.balance + l10n_es_pymes_line_21200.balance + l10n_es_pymes_line_21300.balance + l10n_es_pymes_line_21400.balance + l10n_es_pymes_line_21500.balance + l10n_es_pymes_line_21700.balance + l10n_es_pymes_line_21800.balance</field>
                                 <field name="children_ids">
                                     <record id="balance_pymes_line_21100" model="account.report.line">
-                                        <field name="name">I. Capital</field>
-                                        <field name="name@es">I. Capital</field>
+                                        <field name="name">Capital</field>
                                         <field name="code">l10n_es_pymes_line_21100</field>
                                         <!-- <field name="groupby">account_id</field> -->
                                         <field name="foldable" eval="True"/>
