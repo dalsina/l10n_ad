@@ -473,7 +473,7 @@
                             <record id="balance_ad_line_32500" model="account.report.line">
                                 <field name="name">Creditors comercials i altres comptes a pagar</field>
                                 <field name="code">l10n_ad_pymes_line_32500</field>
-                                <field name="aggregation_formula">l10n_ad_pymes_line_32510.balance + l10n_ad_pymes_line_32520.balance + l10n_ad_pymes_line_32530.balance + l10n_ad_pymes_line_32540.balance + l10n_ad_pymes_line_32550.balance +</field>
+                                <field name="aggregation_formula">l10n_ad_pymes_line_32510.balance + l10n_ad_pymes_line_32520.balance + l10n_ad_pymes_line_32530.balance + l10n_ad_pymes_line_32540.balance + l10n_ad_pymes_line_32550.balance</field>
                                 <field name="children_ids">
                                     <record id="balance_ad_line_32510" model="account.report.line">
                                         <field name="name">Proveïdors</field>
