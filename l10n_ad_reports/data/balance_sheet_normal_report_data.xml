@@ -101,7 +101,7 @@
                                 <field name="name">Inversions immobiliàries</field>
                                 <field name="code">l10n_ad_pymes_line_11300</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">22 + 282 + 292</field>
+                                <field name="account_codes_formula">220 + 221 + 282 + 292</field>
                             </record>
                             <!-- IMMOBILITZAT FINANCER -->
                             <record id="balance_ad_line_11400" model="account.report.line">
@@ -133,6 +133,7 @@
                                                 <field name="foldable" eval="True"/>
                                                 <field name="account_codes_formula"></field>
                                             </record>
+                                        </field>
                                     </record>
                                     <!-- ALTRES EMPRESES -->
                                     <record id="balance_ad_line_11420" model="account.report.line">
@@ -158,6 +159,7 @@
                                                 <field name="foldable" eval="True"/>
                                                 <field name="account_codes_formula">258 + 260 + 265</field>
                                             </record>
+                                        </field>
                                     </record>
                             </record>
                         </field>
@@ -172,7 +174,6 @@
                             <record id="balance_ad_line_12100" model="account.report.line">
                                 <field name="name">Altres actius no corrents en venda</field>
                                 <field name="code">l10n_ad_pymes_line_12100</field>
-                                <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
                                 <field name="account_codes_formula">58 + 599</field>
                             </record>
