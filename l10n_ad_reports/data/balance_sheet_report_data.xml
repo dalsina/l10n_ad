@@ -89,7 +89,7 @@
                                 <field name="code">l10n_es_pymes_line_12300</field>
                                 <!-- <field name="groupby">account_id</field> -->
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">43 + 44 + 460 + 470 + 490 + 493 + 472 + 473 + 474</field>
+                                <field name="account_codes_formula">430 + 431 + 432 + 433 + 434 + 435 + 436 + 437 + 440 + 441 + 446 + 460 + 470 + 490 + 493 + 472 + 473 + 474</field>
                             </record>
                             <record id="balance_pymes_line_12400" model="account.report.line">
                                 <field name="name">Inversions financeres a curt termini</field>

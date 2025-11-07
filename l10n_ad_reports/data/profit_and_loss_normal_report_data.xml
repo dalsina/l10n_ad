@@ -240,7 +240,7 @@
                                     <record id="ad_pl_n_8_2_balance" model="account.report.expression">
                                         <field name="label">balance</field>
                                         <field name="engine">account_codes</field>
-                                        <field name="formula">- 690 - 691 - 692 - 693 - 790 - 791 - 792 - 793</field>
+                                        <field name="formula">- 690 - 691 - 692 - 790 - 791 - 792</field>
                                     </record>
                                 </field>
                             </record>
@@ -281,7 +281,7 @@
                                     <record id="ad_pl_n_9_1_balance" model="account.report.expression">
                                         <field name="label">balance</field>
                                         <field name="engine">account_codes</field>
-                                        <field name="formula">- 693 - 793</field>
+                                        <field name="formula">99</field>
                                     </record>
                                 </field>
                             </record>
