@@ -377,20 +377,39 @@
                             <record id="balance_ad_line_31200" model="account.report.line">
                                 <field name="name">Deutes a llarg termini</field>
                                 <field name="code">l10n_ad_pymes_line_31200</field>
-                                <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-17 - 18</field>
+                                <field name="aggregation_formula">l10n_ad_pymes_line_31210.balance + l10n_ad_pymes_line_31220.balance + l10n_ad_pymes_line_31230.balance</field>
+                                <field name="children_ids">
+                                    <record id="balance_ad_line_31210" model="account.report.line">
+                                        <field name="name">Obligacions i altres valora negociables</field>
+                                        <field name="code">l10n_ad_pymes_line_31210</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 177 - 179</field>
+                                    </record>
+                                    <record id="balance_ad_line_31220" model="account.report.line">
+                                        <field name="name">Deutes amb entitats de crèdit</field>
+                                        <field name="code">l10n_ad_pymes_line_31220</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 170 - 174</field>
+                                    </record>
+                                    <record id="balance_ad_line_31230" model="account.report.line">
+                                        <field name="name">Altres</field>
+                                        <field name="code">l10n_ad_pymes_line_31230</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 171 - 173 - 175 - 180 - 181 - 185 - 189</field>
+                                    </record>
+                                </field>
                             </record>
                             <record id="balance_ad_line_31300" model="account.report.line">
                                 <field name="name">Deutes amb empreses del grup i associades a llarg termin</field>
                                 <field name="code">l10n_ad_pymes_line_31300</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-16</field>
+                                <field name="account_codes_formula">- 160 - 161 - 162 - 163</field>
                             </record>
                             <record id="balance_ad_line_31400" model="account.report.line">
                                 <field name="name">Subvencions</field>
                                 <field name="code">l10n_ad_pymes_line_31400</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-13</field>
+                                <field name="account_codes_formula">- 130 - 131 - 132</field>
                             </record>
                         </field>
                     </record>
@@ -405,7 +424,7 @@
                                 <field name="name">Passius vinculats amb altres actius no corrents en venda</field>
                                 <field name="code">l10n_ad_pymes_line_32100</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-58</field>
+                                <field name="account_codes_formula">- 585 - 586 - 587 - 588 - 589</field>
                             </record>
                             <record id="balance_ad_line_32200" model="account.report.line">
                                 <field name="name">Provisions a curt termin</field>
@@ -417,19 +436,76 @@
                                 <field name="name">Deutes a curt termini</field>
                                 <field name="code">l10n_ad_pymes_line_32300</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-194 - 475 - 476 - 477 - 479 - 50 - 52 - 550 - 551 - 552 - 554 - 555 - 556 - 560 - 561 - 569</field>
+                                <field name="aggregation_formulas">l10n_ad_pymes_line_32310.balance + l10n_ad_pymes_line_32320.balance + l10n_ad_pymes_line_32330.balance + l10n_ad_pymes_line_32340.balance</field>
+                                <field name="children_ids">
+                                    <record id="balance_ad_line_32310" model="account.report.line">
+                                        <field name="name">Obligacions i altres valors negociables</field>
+                                        <field name="code">l10n_ad_pymes_line_32310</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 500 - 505 - 506</field>
+                                    </record>
+                                    <record id="balance_ad_line_32320" model="account.report.line">
+                                        <field name="name">Deutes amb entitats de crèdit</field>
+                                        <field name="code">l10n_ad_pymes_line_32320</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 520 - 524 - 527</field>
+                                    </record>
+                                    <record id="balance_ad_line_32330" model="account.report.line">
+                                        <field name="name">Derivats financers a curt termini</field>
+                                        <field name="code">l10n_ad_pymes_line_32330</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 99</field>
+                                    </record>
+                                    <record id="balance_ad_line_32340" model="account.report.line">
+                                        <field name="name">Altres</field>
+                                        <field name="code">l10n_ad_pymes_line_32340</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 194 - 475 - 476 - 477 - 479 - 523 - 526 - 528 - 550 - 551 - 552 - 554 - 555 - 556 - 560 - 561 - 569</field>
+                                    </record>
+                                </field>
                             </record>
                             <record id="balance_ad_line_32400" model="account.report.line">
                                 <field name="name">Deutes amb empreses del grup i associades a curt termin</field>
                                 <field name="code">l10n_ad_pymes_line_32400</field>
                                 <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">-51</field>
+                                <field name="account_codes_formula">- 510 - 511 - 512 - 513 - 514</field>
                             </record>
                             <record id="balance_ad_line_32500" model="account.report.line">
                                 <field name="name">Creditors comercials i altres comptes a pagar</field>
                                 <field name="code">l10n_ad_pymes_line_32500</field>
-                                <field name="foldable" eval="True"/>
-                                <field name="account_codes_formula">- 400 - 401 - 405 - 406 - 403 - 404 - 410 - 411 - 438 - 465 - 466</field>
+                                <field name="aggregation_formula">l10n_ad_pymes_line_32510.balance + l10n_ad_pymes_line_32520.balance + l10n_ad_pymes_line_32530.balance + l10n_ad_pymes_line_32540.balance + l10n_ad_pymes_line_32550.balance +</field>
+                                <field name="children_ids">
+                                    <record id="balance_ad_line_32510" model="account.report.line">
+                                        <field name="name">Proveïdors</field>
+                                        <field name="code">l10n_ad_pymes_line_32510</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 400 - 401 - 405 - 406</field>
+                                    </record>
+                                    <record id="balance_ad_line_32520" model="account.report.line">
+                                        <field name="name">Empreses del grup associades, creditores</field>
+                                        <field name="code">l10n_ad_pymes_line_32520</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 403 - 404</field>
+                                    </record>
+                                    <record id="balance_ad_line_32530" model="account.report.line">
+                                        <field name="name">Creditors varis</field>
+                                        <field name="code">l10n_ad_pymes_line_32530</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 410 - 411</field>
+                                    </record>
+                                    <record id="balance_ad_line_32540" model="account.report.line">
+                                        <field name="name">Bestretes de clients</field>
+                                        <field name="code">l10n_ad_pymes_line_32540</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 438 </field>
+                                    </record>
+                                    <record id="balance_ad_line_32550" model="account.report.line">
+                                        <field name="name">Bestretes de clients</field>
+                                        <field name="code">l10n_ad_pymes_line_32550</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 465 - 466 </field>
+                                    </record>
+                                </field>
                             </record>
                             <record id="balance_ad_line_32600" model="account.report.line">
                                 <field name="name">Ajustaments per periodificació</field>
