@@ -263,68 +263,93 @@
                     <record id="balance_ad_line_20000" model="account.report.line">
                         <field name="name">PATRIMONI NET</field>
                         <field name="code">l10n_ad_pymes_line_20000</field>
-                        <field name="aggregation_formula">l10n_ad_pymes_line_21000.balance</field>
+                        <field name="aggregation_formula">l10n_ad_pymes_line_21000.balance + l10n_ad_pymes_line_22000.balance + l10n_ad_pymes_line_23000.balance + l10n_ad_pymes_line_24000.balance + l10n_ad_pymes_line_25000.balance + l10n_ad_pymes_line_26000.balance</field>
                         <field name="children_ids">
                             <record id="balance_ad_line_21000" model="account.report.line">
                                 <field name="name">Capital</field>
                                 <field name="code">l10n_ad_pymes_line_21000</field>
-                                <field name="aggregation_formula">l10n_ad_pymes_line_21100.balance + l10n_ad_pymes_line_21200.balance + l10n_ad_pymes_line_21300.balance + l10n_ad_pymes_line_21400.balance + l10n_ad_pymes_line_21500.balance + l10n_ad_pymes_line_21700.balance + l10n_ad_pymes_line_21800.balance</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="account_codes_formula">- 100 - 101 - 102</field>
+                            </record>
+                            <record id="balance_ad_line_22000" model="account.report.line">
+                                <field name="name">Prima d'emissió</field>
+                                <field name="code">l10n_ad_pymes_line_22000</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="account_codes_formula">- 110</field>
+                            </record>
+                            <record id="balance_ad_line_23000" model="account.report.line">
+                                <field name="name">Reserves</field>
+                                <field name="code">l10n_ad_pymes_line_23000</field>
+                                <field name="aggregation_formula">l10n_ad_pymes_line_23100.balance + l10n_ad_pymes_line_23200.balance + l10n_ad_pymes_line_23300.balance + l10n_ad_pymes_line_23400.balance + l10n_ad_pymes_line_23500.balance</field>
                                 <field name="children_ids">
-                                    <record id="balance_ad_line_21100" model="account.report.line">
-                                        <field name="name">Capital</field>
-                                        <field name="code">l10n_ad_pymes_line_21100</field>
-                                        <!-- <field name="groupby">account_id</field> -->
+                                    <record id="balance_ad_line_23100" model="account.report.line">
+                                        <field name="name">Reserva Legal</field>
+                                        <field name="code">l10n_ad_pymes_line_23100</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">-10</field>
+                                        <field name="account_codes_formula">- 112</field>
                                     </record>
-                                    <record id="balance_ad_line_21200" model="account.report.line">
-                                        <field name="name">Prima d'emissió</field>
-                                        <field name="code">l10n_ad_pymes_line_21200</field>
-                                        <!-- <field name="groupby">account_id</field> -->
+                                    <record id="balance_ad_line_23200" model="account.report.line">
+                                        <field name="name">Reserva de revalorització</field>
+                                        <field name="code">l10n_ad_pymes_line_23200</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">-110</field>
+                                        <field name="account_codes_formula">- 116</field>
                                     </record>
-                                    <record id="balance_ad_line_21300" model="account.report.line">
-                                        <field name="name">Reserves</field>
-                                        <field name="code">l10n_ad_pymes_line_21300</field>
-                                        <!-- <field name="groupby">account_id</field> -->
+                                    <record id="balance_ad_line_23300" model="account.report.line">
+                                        <field name="name">Reserva per accions propies</field>
+                                        <field name="code">l10n_ad_pymes_line_23300</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">-113 - 112 - 119 - 114 - 115 - 116 - 118</field>
+                                        <field name="account_codes_formula">- 115</field>
                                     </record>
-                                    <record id="balance_ad_line_21400" model="account.report.line">
-                                        <field name="name">Instruments de capital propis</field>
-                                        <field name="code">l10n_ad_pymes_line_21400</field>
-                                        <!-- <field name="groupby">account_id</field> -->
+                                    <record id="balance_ad_line_23400" model="account.report.line">
+                                        <field name="name">Reserves estatuàries</field>
+                                        <field name="code">l10n_ad_pymes_line_23400</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">-109 - 108</field>
+                                        <field name="account_codes_formula">- 113</field>
                                     </record>
-                                    <record id="balance_ad_line_21500" model="account.report.line">
+                                    <record id="balance_ad_line_23500" model="account.report.line">
+                                        <field name="name">Reserves estatuàries</field>
+                                        <field name="code">l10n_ad_pymes_line_23500</field>
+                                        <field name="foldable" eval="True"/>
+                                        <field name="account_codes_formula">- 114 - 118 - 119</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="balance_ad_line_24000" model="account.report.line">
+                                <field name="name">Instruments de capital propis</field>
+                                <field name="code">l10n_ad_pymes_line_24000</field>
+                                <field name="foldable" eval="True"/>
+                                <field name="account_codes_formula">- 109 - 108</field>
+                            </record>
+                            <record id="balance_ad_line_25000" model="account.report.line">
+                                <field name="name">Resultats d'exercicis anteriors</field>
+                                <field name="code">l10n_ad_pymes_line_25000</field>
+                                <field name="aggregation_formula">l10n_ad_pymes_line_25100.balance + l10n_ad_pymes_line_25200.balance</field>
+                                <field name="children_ids">
+                                    <record id="balance_ad_line_25100" model="account.report.line">
                                         <field name="name">Resultats d'exercicis anteriors</field>
-                                        <field name="code">l10n_ad_pymes_line_21500</field>
-                                        <!-- <field name="groupby">account_id</field> -->
+                                        <field name="code">l10n_ad_pymes_line_25100</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">- 120 - 121</field>
+                                        <field name="account_codes_formula">- 120</field>
                                     </record>
-                                    <record id="balance_ad_line_21700" model="account.report.line">
-                                        <field name="name">Resultat de l'exercici</field>
-                                        <field name="code">l10n_ad_pymes_line_21700</field>
-                                        <field name="action_id" ref="account_reports.action_account_report_pl"/>
-                                        <field name="expression_ids">
-                                            <record id="balance_ad_line_21700_balance" model="account.report.expression">
-                                                <field name="label">balance</field>
-                                                <field name="engine">aggregation</field>
-                                                <field name="subformula">cross_report(l10n_ad_reports.financial_report_es_profit_and_loss)</field>
-                                                <field name="formula">ad_pl_year_sum.balance</field>
-                                                <field name="date_scope">from_fiscalyear</field>
-                                            </record>
-                                        </field>
-                                    </record>
-                                    <record id="balance_ad_line_21800" model="account.report.line">
-                                        <field name="name">Dividend a compte</field>
-                                        <field name="code">l10n_ad_pymes_line_21800</field>
-                                        <!-- <field name="groupby">account_id</field> -->
+                                    <record id="balance_ad_line_25200" model="account.report.line">
+                                        <field name="name">Altres resultats d'exercicis anteriors</field>
+                                        <field name="code">l10n_ad_pymes_line_25200</field>
                                         <field name="foldable" eval="True"/>
-                                        <field name="account_codes_formula">- 557</field>
+                                        <field name="account_codes_formula">- 121</field>
+                                    </record>
+                                </field>
+                            </record>
+                            <record id="balance_ad_line_26000" model="account.report.line">
+                                <field name="name">Resultat de l'exercici</field>
+                                <field name="code">l10n_ad_pymes_line_26000</field>
+                                <field name="action_id" ref="account_reports.action_account_report_pl"/>
+                                <field name="expression_ids">
+                                    <record id="balance_ad_line_26000_balance" model="account.report.expression">
+                                        <field name="label">balance</field>
+                                        <field name="engine">aggregation</field>
+                                        <field name="subformula">cross_report(l10n_ad_reports.financial_report_es_profit_and_loss)</field>
+                                        <field name="formula">ad_pl_year_sum.balance</field>
+                                        <field name="date_scope">from_fiscalyear</field>
                                     </record>
                                 </field>
                             </record>
