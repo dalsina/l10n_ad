@@ -139,7 +139,7 @@
                                     <record id="balance_ad_line_11420" model="account.report.line">
                                         <field name="name">Altres empreses</field>
                                         <field name="code">l10n_ad_pymes_line_11420</field>
-                                        <field name="agregation_formula">l10n_ad_pymes_line_11421.balance + l10n_ad_pymes_line_11422.balance + l10n_ad_pymes_line_11423.balance</field>
+                                        <field name="aggregation_formula">l10n_ad_pymes_line_11421.balance + l10n_ad_pymes_line_11422.balance + l10n_ad_pymes_line_11423.balance</field>
                                         <field name="children_ids">
                                             <record id="balance_ad_line_11421" model="account.report.line">
                                                 <field name="name">Instruments de patrimoni</field>
